@@ -5,7 +5,7 @@
    "name_en": "Residential",
    "name_fa": "مسکونی",
    "title_en": "Residences of character",
-   "title_fa": "ساختمان‌های مسکونی شاخص",
+   "title_fa": "ساختمان‌های مسکونی ممتاز",
    "text_en": "Classical and contemporary apartment buildings, villas and mansions, finished in natural stone, brick and glass.",
    "text_fa": "آپارتمان‌ها، ویلاها و عمارت‌های کلاسیک و مدرن با نمای سنگ طبیعی، آجر و شیشه.",
    "items": [
@@ -40,7 +40,7 @@
      "image": "img/r2113.webp",
      "size": "tall",
      "title_en": "Brick Lattice Apartments",
-     "title_fa": "آپارتمان‌های آجری مشبک",
+     "title_fa": "آپارتمان با نمای آجری مشبک",
      "subtitle_en": "Residential · Contemporary",
      "subtitle_fa": "مسکونی · مدرن",
      "own_project": true
@@ -49,7 +49,7 @@
      "image": "img/r2111.webp",
      "size": "tall",
      "title_en": "Contemporary Stone Residence",
-     "title_fa": "ساختمان مسکونی مدرن سنگی",
+     "title_fa": "ساختمان مدرن با نمای سنگ",
      "subtitle_en": "Residential · Contemporary",
      "subtitle_fa": "مسکونی · مدرن",
      "own_project": true
@@ -58,7 +58,7 @@
      "image": "img/r2114.webp",
      "size": "tall",
      "title_en": "Classical Corner Residence",
-     "title_fa": "ساختمان مسکونی کلاسیک نبش",
+     "title_fa": "ساختمان کلاسیک نبش",
      "subtitle_en": "Residential · Classical",
      "subtitle_fa": "مسکونی · کلاسیک",
      "own_project": true
@@ -94,7 +94,7 @@
      "image": "img/n2d70.webp",
      "size": "wide",
      "title_en": "Classical Stone Residence",
-     "title_fa": "عمارت مسکونی کلاسیک سنگی",
+     "title_fa": "عمارت کلاسیک با نمای سنگ",
      "subtitle_en": "Residential · Classical",
      "subtitle_fa": "مسکونی · کلاسیک",
      "own_project": false
@@ -117,7 +117,7 @@
    "title_en": "Commercial and hospitality",
    "title_fa": "تجاری، اداری و هتل",
    "text_en": "Offices, corporate headquarters, hotels and retail space, built to the standard our banking clients have relied on for decades.",
-   "text_fa": "ساختمان‌های اداری، دفاتر مرکزی شرکت‌ها، هتل و فضاهای تجاری؛ با همان استانداردی که کارفرمایان بانکی سال‌ها به آن اعتماد کرده‌اند.",
+   "text_fa": "ساختمان‌های اداری، دفاتر مرکزی، هتل و فضاهای تجاری؛ با همان کیفیتی که بانک‌ها سال‌ها به آن اعتماد کرده‌اند.",
    "items": [
     {
      "image": "img/n2147.webp",
@@ -143,7 +143,7 @@
      "title_en": "Hotel Lobby",
      "title_fa": "لابی هتل",
      "subtitle_en": "Hospitality · Interiors",
-     "subtitle_fa": "هتل · داخلی",
+     "subtitle_fa": "هتل · طراحی داخلی",
      "own_project": false
     },
     {
@@ -159,9 +159,9 @@
      "image": "img/c46.webp",
      "size": "wide",
      "title_en": "Corporate Reception",
-     "title_fa": "لابی و پذیرش اداری",
+     "title_fa": "لابی ساختمان اداری",
      "subtitle_en": "Commercial · Interiors",
-     "subtitle_fa": "تجاری · داخلی",
+     "subtitle_fa": "تجاری · طراحی داخلی",
      "own_project": false
     }
    ]
@@ -181,7 +181,7 @@
      "title_en": "Residence Interior Renewal",
      "title_fa": "بازسازی داخلی منزل",
      "subtitle_en": "Renovation · Interiors",
-     "subtitle_fa": "بازسازی · داخلی",
+     "subtitle_fa": "بازسازی · فضای داخلی",
      "own_project": false
     },
     {
@@ -199,7 +199,7 @@
      "title_en": "Living Room Refurbishment",
      "title_fa": "بازسازی سالن پذیرایی",
      "subtitle_en": "Renovation · Interiors",
-     "subtitle_fa": "بازسازی · داخلی",
+     "subtitle_fa": "بازسازی · فضای داخلی",
      "own_project": false
     },
     {
@@ -217,7 +217,7 @@
      "title_en": "Apartment Modernisation",
      "title_fa": "نوسازی آپارتمان",
      "subtitle_en": "Renovation · Interiors",
-     "subtitle_fa": "بازسازی · داخلی",
+     "subtitle_fa": "بازسازی · فضای داخلی",
      "own_project": false
     }
    ]
@@ -229,7 +229,7 @@
    "title_en": "Architecture and design",
    "title_fa": "معماری و طراحی",
    "text_en": "Concept and detailed design from our technical office: massing, facades, interiors and landscape conceived as one.",
-   "text_fa": "طراحی مفهومی و تفصیلی در دفتر فنی: حجم، نما، فضای داخلی و محوطه به‌صورت یکپارچه.",
+   "text_fa": "طراحی مفهومی و تفصیلی در دفتر فنی شرکت؛ حجم، نما، فضای داخلی و محوطه، همه در یک طرح یکپارچه.",
    "items": [
     {
      "image": "img/n2146.webp",
@@ -271,7 +271,7 @@
      "image": "img/n2149.webp",
      "size": "wide",
      "title_en": "Cantilevered House over Water",
-     "title_fa": "خانه معلق روی آب",
+     "title_fa": "خانه‌ای بر فراز آب",
      "subtitle_en": "Design · Residential",
      "subtitle_fa": "طراحی · مسکونی",
      "own_project": false
@@ -285,7 +285,7 @@
    "title_en": "Public and service buildings",
    "title_fa": "ساختمان‌های خدماتی و عمومی",
    "text_en": "Thirty years of schools, bank branches and relief facilities for public clients across East Azerbaijan.",
-   "text_fa": "سی سال ساخت مدرسه، شعب بانک و پایگاه‌های امدادی برای کارفرمایان دولتی در آذربایجان شرقی.",
+   "text_fa": "سی سال ساخت مدرسه، شعبه بانک و پایگاه امدادی برای دستگاه‌های دولتی در آذربایجان شرقی.",
    "items": [
     {
      "image": "img/p_kaljah.webp",

@@ -12,7 +12,7 @@
     {
      "key": "header-2",
      "en": "Construction Company",
-     "fa": "شرکت ساختمانی · از ۱۳۶۲"
+     "fa": "شرکت راه و ساختمانی · از ۱۳۶۲"
     }
    ]
   },
@@ -38,7 +38,7 @@
     {
      "key": "hero-5",
      "en": "Four decades of engineering, from roads and public buildings to luxury residences and commercial landmarks. We design, engineer and build every project ourselves, from foundation to final key.",
-     "fa": "چهار دهه تجربه مهندسی؛ از راه‌سازی و ساختمان‌های خدماتی تا منازل لوکس و ساختمان‌های تجاری شاخص. هر پروژه را خودمان طراحی، مهندسی و اجرا می‌کنیم؛ از پی تا کلید."
+     "fa": "بیش از چهل سال تجربه در راه‌سازی، ساختمان‌های خدماتی، منازل لوکس و مجتمع‌های تجاری. طراحی، مهندسی و اجرای هر پروژه را خودمان بر عهده می‌گیریم؛ از پی تا کلید."
     }
    ]
   },
@@ -64,7 +64,7 @@
     {
      "key": "facts-4",
      "en": "public contracts delivered",
-     "fa": "قرارداد عمرانی اجراشده"
+     "fa": "قرارداد عمرانی به سرانجام رسیده"
     },
     {
      "key": "facts-5",
@@ -74,7 +74,7 @@
     {
      "key": "facts-6",
      "en": "letters of commendation",
-     "fa": "تقدیرنامه از کارفرمایان"
+     "fa": "لوح تقدیر از کارفرمایان"
     },
     {
      "key": "facts-7",
@@ -84,7 +84,7 @@
     {
      "key": "facts-8",
      "en": "registered company, Tabriz",
-     "fa": "شماره ثبت، تبریز"
+     "fa": "شماره ثبت شرکت در تبریز"
     }
    ]
   },
@@ -95,17 +95,17 @@
     {
      "key": "consult-1",
      "en": "Start here",
-     "fa": "شروع همکاری"
+     "fa": "آغاز همکاری"
     },
     {
      "key": "consult-2",
      "en": "Free consultation. Site visit. Cost estimate.",
-     "fa": "مشاوره رایگان. بازدید از محل. برآورد هزینه."
+     "fa": "مشاوره رایگان، بازدید از ملک، برآورد هزینه"
     },
     {
      "key": "consult-3",
      "en": "Tell us about your land or building. Our engineers will advise you at no cost, visit the site and give you a clear estimate before any commitment.",
-     "fa": "درباره زمین یا ساختمان خود بگویید. مهندسان ما بدون هزینه مشاوره می‌دهند، از محل بازدید می‌کنند و پیش از هر تعهدی برآورد روشن هزینه را ارائه می‌کنند."
+     "fa": "از زمین یا ساختمانتان برایمان بگویید. مهندسان ما رایگان مشاوره می‌دهند، از ملک بازدید می‌کنند و پیش از هر قراری، برآوردی شفاف از هزینه‌ها در اختیارتان می‌گذارند."
     },
     {
      "key": "consult-4",
@@ -120,17 +120,17 @@
     {
      "key": "consult-6",
      "en": "Talk to an engineer about your plot, budget and options.",
-     "fa": "گفت‌وگو با مهندس درباره زمین، بودجه و گزینه‌های شما."
+     "fa": "گفت‌وگو با مهندس درباره زمین، بودجه و راهکارهای پیش رو."
     },
     {
      "key": "consult-7",
      "en": "Site visit request",
-     "fa": "درخواست بازدید"
+     "fa": "درخواست بازدید از ملک"
     },
     {
      "key": "consult-8",
      "en": "We inspect the site, access, soil and existing structure.",
-     "fa": "بررسی محل، دسترسی، خاک و سازه موجود توسط کارشناسان ما."
+     "fa": "کارشناسان ما وضعیت ملک، دسترسی‌ها، خاک و سازه موجود را بررسی می‌کنند."
     },
     {
      "key": "consult-9",
@@ -140,17 +140,17 @@
     {
      "key": "consult-10",
      "en": "An itemised estimate for design and construction.",
-     "fa": "برآورد تفکیکی هزینه طراحی و ساخت."
+     "fa": "برآورد جزءبه‌جزء هزینه طراحی و ساخت."
     },
     {
      "key": "consult-11",
      "en": "Register a service",
-     "fa": "ثبت خدمات"
+     "fa": "ثبت درخواست خدمات"
     },
     {
      "key": "consult-12",
      "en": "Construction, renovation or partnership: register your project.",
-     "fa": "ساخت، بازسازی یا مشارکت در ساخت؛ پروژه خود را ثبت کنید."
+     "fa": "ساخت، بازسازی یا مشارکت در ساخت؛ پروژه‌تان را ثبت کنید."
     }
    ]
   },
@@ -166,22 +166,22 @@
     {
      "key": "about-2",
      "en": "A legacy of experience. A vision for the future.",
-     "fa": "میراثی از تجربه، چشم‌اندازی برای آینده."
+     "fa": "میراثی از تجربه، چشم‌اندازی برای آینده"
     },
     {
      "key": "about-3",
      "en": "Since 1983, the name GhalehBabak has stood for engineering experience, professional commitment and spaces built to last. Rooted in the historic city of Tabriz and active in Tehran and across Iran, we have spent more than forty years in road construction, public and service projects, architecture, technical and engineering consultancy, and the design and delivery of building and civil works.",
-     "fa": "از سال ۱۳۶۲، نام قلعه‌بابک با تجربه مهندسی، تعهد حرفه‌ای و خلق فضاهای ماندگار گره خورده است. قلعه‌بابک با ریشه در شهر تاریخی تبریز و فعالیت در تبریز، تهران و دیگر شهرهای ایران، بیش از چهار دهه در راه‌سازی، پروژه‌های خدماتی، معماری، مشاوره فنی و مهندسی و طراحی و اجرای پروژه‌های ساختمانی و عمرانی حضور داشته است."
+     "fa": "از سال ۱۳۶۲، نام قلعه‌بابک با تجربه مهندسی، تعهد حرفه‌ای و ساختن فضاهای ماندگار گره خورده است. قلعه‌بابک که ریشه در شهر تاریخی تبریز دارد، بیش از چهار دهه است که در تبریز، تهران و دیگر شهرهای ایران در زمینه راه‌سازی، پروژه‌های خدماتی، معماری، مشاوره فنی و مهندسی و طراحی و اجرای پروژه‌های ساختمانی و عمرانی فعالیت می‌کند."
     },
     {
      "key": "about-4",
      "en": "Our work spans architectural design and the construction of residential, commercial and public buildings; renovation and modernisation; facade design and execution; road building and civil infrastructure. Public clients have trusted us with schools, branches of Bank Melli and Refah Bank, and Red Crescent facilities.",
-     "fa": "دامنه فعالیت ما از طراحی معماری و اجرای ساختمان‌های مسکونی، تجاری و خدماتی تا بازسازی و نوسازی، طراحی و اجرای نما، راه‌سازی و توسعه زیرساخت‌های عمرانی را در بر می‌گیرد. کارفرمایان دولتی ساخت مدارس، شعب بانک ملی و بانک رفاه و پایگاه‌های هلال احمر را به ما سپرده‌اند."
+     "fa": "کار ما از طراحی معماری و ساخت بناهای مسکونی، تجاری و خدماتی تا بازسازی و نوسازی، طراحی و اجرای نما، راه‌سازی و توسعه زیرساخت‌های عمرانی را در بر می‌گیرد. ساخت مدارس، شعبه‌های بانک ملی و بانک رفاه و پایگاه‌های هلال احمر از جمله کارهایی است که دستگاه‌های دولتی به ما سپرده‌اند."
     },
     {
      "key": "about-5",
      "en": "For us, architecture is more than the face of a building, and construction is more than raising a structure. Every project is where engineering knowledge, architectural creativity, an understanding of the city and responsibility for our client’s capital and trust meet.",
-     "fa": "ما معماری را فراتر از ظاهر ساختمان و ساخت‌وساز را فراتر از اجرای یک سازه می‌دانیم. هر پروژه برای ما محل تلاقی دانش مهندسی، خلاقیت معماری، شناخت بستر شهری و مسئولیت در برابر سرمایه و اعتماد کارفرماست."
+     "fa": "معماری برای ما فراتر از ظاهر ساختمان است و ساخت‌وساز فراتر از برپا کردن یک سازه. هر پروژه جایی است که دانش مهندسی، خلاقیت معماری، شناخت بافت شهر و احساس مسئولیت در برابر سرمایه و اعتماد کارفرما به هم می‌رسند."
     },
     {
      "key": "about-6",
@@ -216,7 +216,7 @@
     {
      "key": "about-12",
      "en": "We join the experience of several generations of engineers with today’s needs, new technology and contemporary construction methods, and we invest and partner in residential, hotel and tourism developments.",
-     "fa": "تلاش کرده‌ایم تجربه نسل‌های مختلف مهندسی را با نیازهای امروز، فناوری‌های نوین و رویکردهای معاصر ساخت‌وساز پیوند دهیم؛ و امروز در سرمایه‌گذاری و مشارکت در ساخت مجتمع‌های مسکونی، هتل و پروژه‌های گردشگری نیز فعالیم."
+     "fa": "کوشیده‌ایم تجربه چند نسل مهندس را با نیازهای امروز، فناوری‌های نو و شیوه‌های روز ساخت‌وساز درآمیزیم. امروز در سرمایه‌گذاری و مشارکت در ساخت مجتمع‌های مسکونی، هتل‌ها و پروژه‌های گردشگری نیز حضور داریم."
     },
     {
      "key": "about-13",
@@ -267,12 +267,12 @@
     {
      "key": "services-2",
      "en": "Construction from zero to one hundred.",
-     "fa": "ساخت‌وساز از صفر تا صد."
+     "fa": "ساخت‌وساز از صفر تا صد"
     },
     {
      "key": "services-3",
      "en": "From the first consultation and cost estimate to design, permits, structure, finishes and the handover of keys. One accountable team, one programme, one budget.",
-     "fa": "از نخستین مشاوره و برآورد هزینه تا طراحی، مجوزها، اسکلت، نازک‌کاری و تحویل کلید. یک تیم پاسخگو، یک برنامه زمانی، یک بودجه."
+     "fa": "از نخستین جلسه مشاوره و برآورد هزینه تا طراحی، اخذ مجوز، اسکلت، نازک‌کاری و تحویل کلید؛ با یک تیم پاسخگو، یک برنامه زمان‌بندی و یک بودجه مشخص."
     },
     {
      "key": "services-4",
@@ -282,7 +282,7 @@
     {
      "key": "services-5",
      "en": "Complete building construction with our own site teams: excavation, foundations, structure, MEP installations, facade, finishes and handover, delivered on programme.",
-     "fa": "ساخت کامل ساختمان با تیم‌های اجرایی خودمان: گودبرداری، فونداسیون، اسکلت، تأسیسات مکانیکی و برقی، نما، نازک‌کاری و تحویل کلید، طبق برنامه زمانی."
+     "fa": "اجرای کامل ساختمان با گروه‌های اجرایی خود شرکت: گودبرداری، فونداسیون، اسکلت، تأسیسات مکانیکی و برقی، نما، نازک‌کاری و تحویل کلید، مطابق برنامه زمان‌بندی."
     },
     {
      "key": "services-6",
@@ -292,7 +292,7 @@
     {
      "key": "services-7",
      "en": "Free initial consultation, site visits, feasibility and itemised cost estimates, so you know the scope and budget before you commit.",
-     "fa": "مشاوره اولیه رایگان، بازدید از محل، امکان‌سنجی و برآورد تفکیکی هزینه؛ تا پیش از هر تعهدی محدوده کار و بودجه را بدانید."
+     "fa": "مشاوره اولیه رایگان، بازدید از ملک، امکان‌سنجی و برآورد جزءبه‌جزء هزینه؛ تا پیش از هر قراری، دامنه کار و بودجه را دقیق بدانید."
     },
     {
      "key": "services-8",
@@ -302,7 +302,7 @@
     {
      "key": "services-9",
      "en": "Private residences, apartment buildings and planned residential communities, built to institutional standards.",
-     "fa": "ساخت منازل شخصی، مجتمع‌های آپارتمانی و شهرک‌های مسکونی با استانداردهای پروژه‌های دولتی."
+     "fa": "ساخت خانه‌های شخصی، مجتمع‌های آپارتمانی و شهرک‌های مسکونی با همان استانداردی که در پروژه‌های دولتی رعایت می‌کنیم."
     },
     {
      "key": "services-10",
@@ -312,7 +312,7 @@
     {
      "key": "services-11",
      "en": "Bank branches, offices, schools, hotels and service buildings. A specialism in banks and educational facilities.",
-     "fa": "شعب بانک، ساختمان‌های اداری، مدارس، هتل و ساختمان‌های خدماتی؛ با تخصص ویژه در اجرای بانک‌ها و مدارس."
+     "fa": "شعبه‌های بانک، ساختمان‌های اداری، مدرسه، هتل و بناهای خدماتی؛ با تجربه‌ای ویژه در ساخت بانک و مدرسه."
     },
     {
      "key": "services-12",
@@ -322,7 +322,7 @@
     {
      "key": "services-13",
      "en": "Upgrading, strengthening and rebuilding existing structures, including seismic retrofit and full demolition-and-rebuild.",
-     "fa": "بهسازی، مقاوم‌سازی لرزه‌ای و تخریب و بازسازی کامل ساختمان‌های موجود."
+     "fa": "بهسازی، مقاوم‌سازی در برابر زلزله و تخریب و بازسازی کامل ساختمان‌های موجود."
     },
     {
      "key": "services-14",
@@ -332,7 +332,7 @@
     {
      "key": "services-15",
      "en": "Concept, architectural and technical design from our in-house technical office, led by our architects and engineers.",
-     "fa": "طراحی مفهومی، معماری و فنی توسط دفتر فنی شرکت با هدایت معماران و مهندسان ما."
+     "fa": "طراحی مفهومی، معماری و فنی در دفتر فنی شرکت، زیر نظر معماران و مهندسان ما."
     },
     {
      "key": "services-16",
@@ -342,7 +342,7 @@
     {
      "key": "services-17",
      "en": "Stone, travertine, glass and composite facades, designed and installed by one team, from the first elevation drawing to the last fixing.",
-     "fa": "نمای سنگ، تراورتن، شیشه و کامپوزیت؛ طراحی و اجرا توسط یک تیم، از نخستین نقشه نما تا آخرین جزئیات نصب."
+     "fa": "نمای سنگ، تراورتن، شیشه و کامپوزیت؛ طراحی و اجرا به دست یک تیم، از نخستین نقشه نما تا آخرین جزئیات نصب."
     },
     {
      "key": "services-18",
@@ -352,7 +352,7 @@
     {
      "key": "services-19",
      "en": "Roads, flood barriers, site works and public infrastructure: the civil engineering on which GhalehBabak was founded in 1983.",
-     "fa": "راه‌سازی، سیل‌بند، محوطه‌سازی و زیرساخت‌های عمومی؛ همان مهندسی عمرانی که قلعه‌بابک در سال ۱۳۶۲ بر پایه آن بنا شد."
+     "fa": "راه‌سازی، سیل‌بند، محوطه‌سازی و زیرساخت‌های شهری؛ همان کار عمرانی که قلعه‌بابک در سال ۱۳۶۲ با آن آغاز شد."
     },
     {
      "key": "services-20",
@@ -362,7 +362,7 @@
     {
      "key": "services-21",
      "en": "Partnership with landowners and investors in residential, commercial and hospitality construction, under clear contractual shares.",
-     "fa": "مشارکت در ساخت با مالکان زمین و سرمایه‌گذاران در پروژه‌های مسکونی، تجاری، هتل و گردشگری، با قراردادهای شفاف."
+     "fa": "همکاری با مالکان زمین و سرمایه‌گذاران در ساخت پروژه‌های مسکونی، تجاری، هتل و گردشگری، با قراردادهایی روشن و شفاف."
     },
     {
      "key": "services-22",
@@ -372,7 +372,7 @@
     {
      "key": "services-23",
      "en": "Your brief, budget and options, at no cost.",
-     "fa": "بررسی نیاز، بودجه و گزینه‌ها، بدون هزینه."
+     "fa": "بررسی نیاز، بودجه و راهکارها، بی‌هیچ هزینه‌ای."
     },
     {
      "key": "services-24",
@@ -382,7 +382,7 @@
     {
      "key": "services-25",
      "en": "Site inspection and an itemised cost estimate.",
-     "fa": "بازدید از محل و برآورد تفکیکی هزینه."
+     "fa": "بازدید از ملک و برآورد جزءبه‌جزء هزینه."
     },
     {
      "key": "services-26",
@@ -392,7 +392,7 @@
     {
      "key": "services-27",
      "en": "Architecture, engineering, contract and permits.",
-     "fa": "طراحی معماری و سازه، قرارداد و اخذ مجوزها."
+     "fa": "طراحی معماری و سازه، عقد قرارداد و اخذ مجوزها."
     },
     {
      "key": "services-28",
@@ -402,7 +402,7 @@
     {
      "key": "services-29",
      "en": "Our own site management, with regular client reporting.",
-     "fa": "مدیریت کارگاه توسط تیم خودمان و گزارش منظم به کارفرما."
+     "fa": "مدیریت کارگاه با تیم خود شرکت و گزارش منظم به کارفرما."
     },
     {
      "key": "services-30",
@@ -412,7 +412,7 @@
     {
      "key": "services-31",
      "en": "Handover, documentation and aftercare.",
-     "fa": "تحویل ساختمان، مدارک و خدمات پس از تحویل."
+     "fa": "تحویل ساختمان و مدارک، همراه با خدمات پس از تحویل."
     }
    ]
   },
@@ -423,17 +423,17 @@
     {
      "key": "living-1",
      "en": "Private residences",
-     "fa": "منازل لوکس"
+     "fa": "خانه‌های لوکس"
     },
     {
      "key": "living-2",
      "en": "Homes designed around the view.",
-     "fa": "خانه‌هایی که پیرامون منظره طراحی می‌شوند."
+     "fa": "خانه‌هایی که با چشم‌انداز طراحی می‌شوند"
     },
     {
      "key": "living-3",
      "en": "Villas, penthouses and family estates, from the first massing study to the last detail of stone, glass and water. Pools, terraces and gardens are planned with the architecture, not added after it.",
-     "fa": "ویلا، پنت‌هاوس و عمارت‌های خانوادگی؛ از نخستین طرح حجمی تا آخرین جزئیات سنگ، شیشه و آب. استخر، تراس و باغ همراه با معماری طراحی می‌شوند، نه بعد از آن."
+     "fa": "ویلا، پنت‌هاوس و عمارت خانوادگی؛ از نخستین طرح تا ظریف‌ترین جزئیات سنگ، شیشه و آب. استخر، تراس و باغ از همان آغاز در دل طرح معماری جای می‌گیرند، نه آنکه بعدها به آن افزوده شوند."
     }
    ]
   },
@@ -449,12 +449,12 @@
     {
      "key": "projects-2",
      "en": "Selected work, by discipline.",
-     "fa": "نمونه کارها، به تفکیک تخصص."
+     "fa": "گزیده‌ای از کارهای ما"
     },
     {
      "key": "projects-3",
      "en": "From private residences to commercial and public buildings, every project is designed, engineered and delivered by one accountable team.",
-     "fa": "از منازل شخصی تا ساختمان‌های تجاری و عمومی؛ هر پروژه توسط یک تیم پاسخگو طراحی، مهندسی و اجرا می‌شود."
+     "fa": "از خانه‌های شخصی تا ساختمان‌های تجاری و عمومی؛ طراحی، مهندسی و اجرای هر پروژه بر عهده یک تیم پاسخگوست."
     },
     {
      "key": "projects-4",
@@ -515,7 +515,7 @@
     {
      "key": "clients-10",
      "en": "We build schools, banks and homes to stand for generations. That is the measure of quality we hold ourselves to.",
-     "fa": "مدرسه، بانک و خانه را برای نسل‌ها می‌سازیم. این معیار کیفیتی است که خود را به آن متعهد می‌دانیم."
+     "fa": "مدرسه، بانک و خانه را برای نسل‌ها می‌سازیم؛ این معیاری است که خود را به آن پایبند می‌دانیم."
     },
     {
      "key": "clients-11",
@@ -531,17 +531,17 @@
     {
      "key": "team-1",
      "en": "Leadership & team",
-     "fa": "مدیران و تیم"
+     "fa": "مدیران و همکاران"
     },
     {
      "key": "team-2",
      "en": "The people accountable for your project.",
-     "fa": "افرادی که پاسخگوی پروژه شما هستند."
+     "fa": "کسانی که پاسخگوی پروژه شما هستند"
     },
     {
      "key": "team-3",
      "en": "Architects, civil and electrical engineers and site managers, many of whom have worked together for decades.",
-     "fa": "معماران، مهندسان عمران و برق و مدیران کارگاه؛ تیمی که سال‌هاست در کنار هم کار می‌کند."
+     "fa": "معماران، مهندسان عمران و برق و مدیران کارگاه؛ تیمی که سال‌هاست دوش‌به‌دوش هم کار می‌کند."
     }
    ]
   },
@@ -552,22 +552,22 @@
     {
      "key": "contact-1",
      "en": "Start a project",
-     "fa": "شروع همکاری"
+     "fa": "آغاز همکاری"
     },
     {
      "key": "contact-2",
      "en": "Tell us what you want to build.",
-     "fa": "بگویید چه می‌خواهید بسازید."
+     "fa": "بگویید چه می‌خواهید بسازید"
     },
     {
      "key": "contact-3",
      "en": "The first consultation is free.",
-     "fa": "اولین مشاوره رایگان است."
+     "fa": "نخستین جلسه مشاوره رایگان است."
     },
     {
      "key": "contact-4",
      "en": "Every enquiry is read by our management team. We correspond in English and Persian.",
-     "fa": "هر درخواست توسط مدیران شرکت بررسی می‌شود. مکاتبات به فارسی و انگلیسی انجام می‌شود."
+     "fa": "مدیران شرکت همه درخواست‌ها را شخصاً بررسی می‌کنند. پاسخگوی شما به فارسی و انگلیسی هستیم."
     },
     {
      "key": "contact-5",
@@ -608,12 +608,12 @@
     {
      "key": "footer-2",
      "en": "Construction Company",
-     "fa": "شرکت ساختمانی"
+     "fa": "شرکت راه و ساختمانی"
     },
     {
      "key": "footer-3",
      "en": "Architecture, renovation, project execution, residential and commercial construction. Tabriz, since 1983.",
-     "fa": "معماری، بازسازی، اجرای پروژه، ساخت مسکونی و تجاری. تبریز، از ۱۳۶۲."
+     "fa": "طراحی معماری، ساخت مسکونی و تجاری، بازسازی و اجرای پروژه. تبریز، از ۱۳۶۲."
     },
     {
      "key": "footer-4",
