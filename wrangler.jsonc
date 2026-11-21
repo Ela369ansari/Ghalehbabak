@@ -4,5 +4,9 @@
   "assets": {
     "directory": "./public",
     "not_found_handling": "404-page"
-  }
+  },
+  "routes": [
+    { "pattern": "ghalehbabak.com", "custom_domain": true },
+    { "pattern": "www.ghalehbabak.com", "custom_domain": true }
+  ]
 }
