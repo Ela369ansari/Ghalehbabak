@@ -1,11 +1,11 @@
 media:
-  input: img
+  input: public/img
   output: img
 content:
   - name: contact
     label: "اطلاعات تماس / Contact"
     type: file
-    path: content/contact.json
+    path: public/content/contact.json
     format: json
     fields:
       - { name: consult_phone, label: "شماره مشاوره (نمایشی)", type: string }
@@ -15,7 +15,7 @@ content:
   - name: team
     label: "تیم / Team"
     type: file
-    path: content/team.json
+    path: public/content/team.json
     format: json
     fields:
       - name: members
@@ -38,7 +38,7 @@ content:
   - name: projects
     label: "پروژه‌ها / Projects"
     type: file
-    path: content/projects.json
+    path: public/content/projects.json
     format: json
     fields:
       - name: categories
@@ -72,7 +72,7 @@ content:
   - name: texts
     label: "متن‌های سایت / Site texts"
     type: file
-    path: content/texts.json
+    path: public/content/texts.json
     format: json
     fields:
       - name: sections
