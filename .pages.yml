@@ -1,0 +1,92 @@
+media:
+  input: img
+  output: img
+content:
+  - name: contact
+    label: "اطلاعات تماس / Contact"
+    type: file
+    path: content/contact.json
+    format: json
+    fields:
+      - { name: consult_phone, label: "شماره مشاوره (نمایشی)", type: string }
+      - { name: whatsapp_number, label: "شماره واتساپ (فقط عدد، با 98، بدون صفر و +)", type: string }
+      - { name: office_phones, label: "تلفن‌های دفتر", type: string, list: true }
+      - { name: emails, label: "ایمیل‌ها", type: string, list: true }
+  - name: team
+    label: "تیم / Team"
+    type: file
+    path: content/team.json
+    format: json
+    fields:
+      - name: members
+        label: "اعضا"
+        type: object
+        list: true
+        fields:
+          - { name: photo, label: "عکس", type: image }
+          - { name: name_fa, label: "نام (فارسی)", type: string }
+          - { name: name_en, label: "Name (English)", type: string }
+          - { name: role_fa, label: "سمت (فارسی)", type: string }
+          - { name: role_en, label: "Role (English)", type: string }
+          - { name: detail_fa, label: "توضیح کوتاه (فارسی)", type: string }
+          - { name: detail_en, label: "Detail (English)", type: string }
+          - { name: bio_fa, label: "بیوگرافی (فارسی، اختیاری)", type: text }
+          - { name: bio_en, label: "Bio (English, optional)", type: text }
+          - { name: link, label: "لینک وب‌سایت (اختیاری)", type: string }
+          - { name: featured, label: "کارت بزرگ (مدیرعامل)", type: boolean }
+          - { name: is_logo, label: "این عکس لوگو است", type: boolean }
+  - name: projects
+    label: "پروژه‌ها / Projects"
+    type: file
+    path: content/projects.json
+    format: json
+    fields:
+      - name: categories
+        label: "دسته‌ها"
+        type: object
+        list: true
+        fields:
+          - { name: id, label: "شناسه (انگلیسی، بدون فاصله)", type: string }
+          - { name: name_fa, label: "نام دسته (فارسی)", type: string }
+          - { name: name_en, label: "Category name (English)", type: string }
+          - { name: title_fa, label: "عنوان (فارسی)", type: string }
+          - { name: title_en, label: "Title (English)", type: string }
+          - { name: text_fa, label: "توضیح (فارسی)", type: text }
+          - { name: text_en, label: "Description (English)", type: text }
+          - name: items
+            label: "عکس‌ها"
+            type: object
+            list: true
+            fields:
+              - { name: image, label: "عکس", type: image }
+              - name: size
+                label: "اندازه در گالری"
+                type: select
+                options:
+                  values: [big, tall, wide, normal]
+              - { name: title_fa, label: "عنوان (فارسی)", type: string }
+              - { name: title_en, label: "Title (English)", type: string }
+              - { name: subtitle_fa, label: "زیرعنوان (فارسی)", type: string }
+              - { name: subtitle_en, label: "Subtitle (English)", type: string }
+              - { name: own_project, label: "برچسب «پروژه قلعه‌بابک»", type: boolean }
+  - name: texts
+    label: "متن‌های سایت / Site texts"
+    type: file
+    path: content/texts.json
+    format: json
+    fields:
+      - name: sections
+        label: "بخش‌ها"
+        type: object
+        list: true
+        fields:
+          - { name: name, label: "بخش", type: string }
+          - { name: id, label: "شناسه (تغییر ندهید)", type: string }
+          - name: items
+            label: "متن‌ها"
+            type: object
+            list: true
+            fields:
+              - { name: key, label: "کلید (تغییر ندهید)", type: string }
+              - { name: fa, label: "فارسی", type: text }
+              - { name: en, label: "English", type: text }

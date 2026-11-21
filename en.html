@@ -1,0 +1,921 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>GhalehBabak | Architecture, Engineering, Construction</title>
+<meta name="description" content="GhalehBabak Road & Building Co., since 1983. Architecture, residential, commercial and public construction, renovation, facades and development partnerships. Tabriz and Tehran.">
+<link rel="alternate" hreflang="fa" href="index.html">
+<link rel="alternate" hreflang="en" href="en.html">
+<meta property="og:title" content="GhalehBabak | Architecture, Engineering, Construction">
+<meta property="og:description" content="GhalehBabak Road & Building Co., since 1983. Architecture, residential, commercial and public construction, renovation, facades and development partnerships. Tabriz and Tehran.">
+<meta property="og:image" content="img/n2d70.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=Manrope:wght@400;500;600;700&family=Vazirmatn:wght@300..800&display=swap">
+<style>
+/* Layout: full-bleed photographic bands alternating with wide-margin editorial grids; one dark "rock" band anchors the story. */
+:root{
+  --ink:#0E2620;          /* deep racing green-black (text, dark bands) */
+  --ink-2:#123329;
+  --paper:#F4F4EF;        /* warm ivory */
+  --stone:#E6E7E0;
+  --line:#D2D5CB;
+  --granite:#5C6A63;      /* secondary text */
+  --mist:#A9B8AF;         /* text on dark */
+  --lapis:#17513F;        /* British racing green, primary accent */
+  --lapis-2:#1F6650;
+  --sand:#CFA84E;         /* honey gold (zanburi), accent on dark */
+  --gold:#C99A2E;
+  --gold-2:#DDB04A;
+  --display:"Archivo","Helvetica Neue",Arial,sans-serif;
+  --body:"Manrope","Helvetica Neue",Arial,sans-serif;
+  --fa:"Vazirmatn",Tahoma,"Segoe UI",sans-serif;
+  --gut:max(16px,env(safe-area-inset-left,0px));
+  --gut-r:max(16px,env(safe-area-inset-right,0px));
+  --max:1320px;
+  color-scheme:light;
+}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+html[lang="fa"] body{font-family:var(--fa);line-height:1.9}
+html[lang="fa"] .en,html[lang="en"] .fa{display:none!important}
+a{color:inherit}
+[hidden]{display:none!important}
+img{display:block;max-width:100%}
+.wrap{max-width:var(--max);margin-inline:auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+@media (max-width:600px){.wrap{padding-left:var(--gut);padding-right:var(--gut-r)}}
+.eyebrow{font-family:var(--display);font-stretch:112%;font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--lapis);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+html[lang="fa"] .eyebrow{font-family:var(--fa);letter-spacing:0;font-size:14px}
+h1,h2,h3{font-family:var(--display);font-weight:500;text-wrap:balance;margin:0;letter-spacing:-.01em}
+html[lang="fa"] h1,html[lang="fa"] h2,html[lang="fa"] h3{font-family:var(--fa);letter-spacing:0}
+h2{font-size:clamp(32px,4.4vw,58px);line-height:1.04;font-stretch:88%;font-weight:500}
+html[lang="fa"] h2{line-height:1.35;font-weight:600;font-size:clamp(28px,3.6vw,46px)}
+p{margin:0}
+.lead{font-size:clamp(17px,1.4vw,20px);color:var(--granite);max-width:62ch}
+section{padding-block:clamp(72px,10vw,140px)}
+.btn{display:inline-flex;align-items:center;gap:12px;font-family:var(--display);font-stretch:110%;font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:16px 26px;border:1px solid currentColor;text-decoration:none;cursor:pointer;background:transparent;color:inherit;transition:background .25s,color .25s,border-color .25s}
+html[lang="fa"] .btn{font-family:var(--fa);letter-spacing:0;font-size:15px}
+.btn .arr{transition:transform .25s}
+.btn:hover .arr{transform:translateX(4px)}
+html[dir="rtl"] .arr{transform:scaleX(-1)}
+html[dir="rtl"] .btn:hover .arr{transform:scaleX(-1) translateX(4px)}
+.btn-solid{background:var(--gold);border-color:var(--gold);color:#0E2620}
+.btn-solid:hover{background:var(--gold-2);border-color:var(--gold-2)}
+.btn-light{color:#fff;border-color:rgba(255,255,255,.55)}
+.btn-light:hover{background:#fff;color:var(--ink);border-color:#fff}
+:focus-visible{outline:2px solid var(--lapis-2);outline-offset:3px}
+
+/* Header */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--ink)}
+.hdr{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(10,31,25,.92);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;height:76px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;min-width:0}
+.brand svg{flex:none}
+.brand-txt{display:flex;flex-direction:column;line-height:1.1;min-width:0}
+.brand-name{font-family:var(--display);font-stretch:118%;font-weight:700;font-size:18px;letter-spacing:.12em}
+.brand-sub{font-family:var(--display);font-stretch:110%;font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--mist);margin-top:3px}
+html[lang="fa"] .brand-name{font-family:var(--fa);letter-spacing:0;font-size:20px}
+html[lang="fa"] .brand-sub{font-family:var(--fa);letter-spacing:0;font-size:11px}
+.nav{display:flex;align-items:center;gap:30px}
+.nav a{font-size:14px;text-decoration:none;color:rgba(255,255,255,.78);transition:color .2s}
+.nav a:hover{color:#fff}
+.hdr-actions{display:flex;align-items:center;gap:14px}
+.lang{white-space:nowrap;background:none;border:1px solid rgba(255,255,255,.25);color:#fff;font:600 12px/1 var(--display);letter-spacing:.1em;padding:9px 12px;cursor:pointer}
+.lang span{opacity:.45}.lang span.on{opacity:1}
+.hdr .btn{padding:11px 18px;font-size:12px}
+.menu-btn{display:none;background:none;border:0;color:#fff;cursor:pointer;padding:8px}
+@media (max-width:1020px){
+  .hdr-call{display:none}
+  .nav{display:none;position:absolute;top:76px;left:0;right:0;flex-direction:column;align-items:flex-start;gap:0;background:var(--ink);padding:8px max(24px,env(safe-area-inset-left,0px)) 24px;border-bottom:1px solid rgba(255,255,255,.1)}
+  .nav.open{display:flex}
+  .nav a{padding:14px 0;width:100%;border-bottom:1px solid rgba(255,255,255,.08);font-size:17px}
+  .menu-btn{display:block}
+  .hdr .btn{display:none}
+}
+@media (max-width:420px){.brand-sub{display:none}.brand-name{font-size:15px;letter-spacing:.08em}.brand svg{width:32px;height:32px}.hdr .wrap{gap:12px}}
+.eyebrow{line-height:1.5}
+
+/* Hero */
+.hero{position:relative;color:#fff;background:var(--ink);overflow:hidden;isolation:isolate}
+.hero-img{position:absolute;inset:0;z-index:-2}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:50% 55%;animation:drift 24s ease-out both}
+@keyframes drift{from{transform:scale(1.08)}to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(10,31,25,.35) 0%,rgba(10,31,25,.15) 35%,rgba(10,31,25,.85) 100%),linear-gradient(90deg,rgba(10,31,25,.55),rgba(10,31,25,0) 65%)}
+html[dir="rtl"] .hero::after{background:linear-gradient(180deg,rgba(10,31,25,.35) 0%,rgba(10,31,25,.15) 35%,rgba(10,31,25,.85) 100%),linear-gradient(270deg,rgba(10,31,25,.55),rgba(10,31,25,0) 65%)}
+.hero .wrap{min-height:clamp(560px,82vh,860px);display:flex;flex-direction:column;justify-content:flex-end;padding-block:120px 56px}
+.hero .eyebrow{color:var(--sand);text-shadow:0 1px 8px rgba(10,31,25,.8)}
+.hero h1{font-size:clamp(46px,8.4vw,128px);line-height:.92;font-stretch:78%;font-weight:600;letter-spacing:-.02em;margin-top:22px;max-width:13ch}
+html[lang="fa"] .hero h1{font-size:clamp(40px,6.4vw,92px);line-height:1.2;font-weight:700;max-width:14ch}
+.hero-foot{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:32px;margin-top:40px}
+.hero-foot p{max-width:52ch;color:rgba(255,255,255,.82);font-size:clamp(16px,1.3vw,19px)}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px}
+.caption{position:absolute;bottom:18px;inset-inline-end:max(24px,env(safe-area-inset-right,0px));font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.55);font-family:var(--display);font-stretch:110%}
+@media (max-width:700px){.caption{display:none}}
+
+/* Facts strip */
+.facts{background:var(--ink);color:#fff;padding-block:0}
+.facts .wrap{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.12)}
+.fact{padding:34px 24px 38px;border-inline-start:1px solid rgba(255,255,255,.12)}
+.fact:first-child{border-inline-start:0;padding-inline-start:0}
+.fact b{display:block;font-family:var(--display);font-stretch:80%;font-weight:500;font-size:clamp(36px,4vw,56px);line-height:1;font-variant-numeric:tabular-nums}
+.fact>span{display:block;margin-top:10px;color:var(--mist);font-size:14px}
+@media (max-width:760px){.facts .wrap{grid-template-columns:1fr 1fr}.fact:nth-child(3){border-inline-start:0;padding-inline-start:0}.fact{border-top:1px solid rgba(255,255,255,.12)}.fact:nth-child(-n+2){border-top:0}}
+
+
+/* Offer band */
+.slogan{margin-top:14px;font-family:var(--fa);font-size:clamp(18px,1.8vw,24px);color:var(--sand);font-weight:500}
+html[lang="fa"] .slogan{font-family:var(--display);font-stretch:96%;letter-spacing:.02em}
+.offer{background:var(--lapis);color:#fff}
+.offer .eyebrow{color:var(--sand)}
+.offer-head{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:end;margin-bottom:clamp(36px,5vw,64px)}
+.offer-head h2{margin-top:20px;font-weight:600}
+.offer-head .lead{color:rgba(255,255,255,.8)}
+.offer-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(10px,1.4vw,18px)}
+.oc{position:relative;display:flex;flex-direction:column;gap:14px;padding:clamp(22px,2.4vw,34px);min-height:240px;text-decoration:none;color:#fff;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);transition:background .25s,transform .25s,border-color .25s}
+.oc:hover{background:rgba(255,255,255,.12);transform:translateY(-3px)}
+.oc b{font-family:var(--display);font-stretch:88%;font-weight:700;font-size:clamp(22px,2vw,28px);line-height:1.1}
+html[lang="fa"] .oc b{font-family:var(--fa);font-size:clamp(20px,1.8vw,24px);font-weight:800}
+.oc .d{color:rgba(255,255,255,.78);font-size:15px}
+.oc .go{margin-top:auto;font:700 12px/1 var(--display);font-stretch:110%;letter-spacing:.14em;text-transform:uppercase;color:var(--sand);display:flex;gap:8px;align-items:center}
+html[lang="fa"] .oc .go{font-family:var(--fa);letter-spacing:0;font-size:14px}
+.oc.hl{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.oc.hl:hover{background:var(--gold-2)}
+.oc.hl .d{color:rgba(14,38,32,.8)}
+.oc.hl .go{color:var(--ink)}
+.oc .free{align-self:flex-start;font:800 11px/1 var(--display);letter-spacing:.2em;text-transform:uppercase;background:var(--ink);color:var(--sand);padding:7px 10px}
+html[lang="fa"] .oc .free{font-family:var(--fa);letter-spacing:0;font-size:13px}
+.free-note{margin-top:16px;font-weight:800;font-size:clamp(18px,1.6vw,22px);color:var(--lapis)}
+.types input[type=radio]:checked+label{background:var(--lapis);border-color:var(--lapis)}
+@media (max-width:960px){.offer-grid{grid-template-columns:1fr 1fr}.offer-head{grid-template-columns:1fr}}
+@media (max-width:480px){.offer-grid{grid-template-columns:1fr}.oc{min-height:0}}
+
+
+.hotline{display:inline-flex;flex-direction:column;gap:4px;text-decoration:none;color:var(--ink)}
+.hotline .hl-l{font:700 11px/1 var(--display);font-stretch:110%;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+html[lang="fa"] .hotline .hl-l{font-family:var(--fa);letter-spacing:0;font-size:13px}
+.hotline .hl-n{font-family:var(--display);font-stretch:84%;font-weight:700;font-size:clamp(26px,2.6vw,38px);line-height:1.05;font-variant-numeric:tabular-nums;unicode-bidi:isolate}
+.hotline.on-dark{color:#fff}
+.hotline.on-dark .hl-l{color:var(--sand)}
+.offer-head > .hotline{grid-column:1/-1;order:3;padding-top:22px;border-top:1px solid rgba(255,255,255,.18)}
+.hero-hl{width:100%;margin-bottom:8px}
+.hero-hl .hl-n{font-size:clamp(24px,2.2vw,32px)}
+.big-num{font-family:var(--display);font-stretch:86%;font-weight:700;font-size:clamp(24px,2.4vw,32px);color:var(--lapis)}
+
+
+.logo{flex:none;display:block}
+.direct{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;width:100%}
+.btn-call,.btn-wa{padding:13px 18px;gap:10px}
+.btn-call{background:transparent;color:var(--lapis);border-color:var(--lapis)}
+.btn-call:hover{background:var(--lapis);color:#fff}
+.btn-wa{background:#1F8F55;border-color:#1F8F55;color:#fff}
+.btn-wa:hover{background:#25A764;border-color:#25A764}
+.direct.on-dark .btn-call{color:#fff;border-color:rgba(255,255,255,.55)}
+.direct.on-dark .btn-call:hover{background:#fff;color:var(--ink)}
+.offer-direct{margin-top:22px}
+@media (max-width:520px){.direct .btn,.hero-ctas .btn{flex:1 1 100%;justify-content:center;letter-spacing:.06em;font-size:12px;white-space:normal;text-align:center}}
+.hero-ctas{flex-direction:row}
+.wa-float{position:fixed;z-index:70;bottom:calc(20px + env(safe-area-inset-bottom,0px));inset-inline-end:max(20px,env(safe-area-inset-right,0px));width:58px;height:58px;border-radius:50%;background:#1F8F55;color:#fff;display:grid;place-items:center;box-shadow:0 8px 24px rgba(10,31,25,.35);transition:transform .2s}
+.wa-float:hover{transform:scale(1.06)}
+
+
+.icall{display:inline-grid;place-items:center;width:52px;height:52px;flex:none;border:1px solid var(--gold);color:var(--gold);text-decoration:none;transition:background .2s,color .2s}
+.icall:hover{background:var(--gold);color:var(--ink)}
+.hdr-call{width:42px;height:42px}
+.hero-ctas{align-items:center}
+.types input[type=checkbox]:checked+label{background:var(--lapis);border-color:var(--lapis);color:#fff}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(40px,7vw,110px);align-items:start}
+.about-grid h2{margin-top:22px}
+.about-copy{display:grid;gap:22px;margin-top:34px}
+.about-copy p{color:var(--granite);max-width:60ch}
+.about-copy p:first-child{color:var(--ink);font-size:clamp(18px,1.5vw,21px)}
+.about-media{position:relative}
+.about-media .main{aspect-ratio:4/5;object-fit:cover;width:100%}
+.about-media figcaption{margin-top:14px;font-size:13px;color:var(--granite);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.hero-loc{margin-top:8px;font:600 12px/1.4 var(--display);letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.78)}
+html[lang="fa"] .hero-loc{font-family:var(--fa);letter-spacing:.02em;font-size:14px;text-transform:none}
+.pillars{list-style:none;padding:0;margin:28px 0;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.pillars li{padding:18px 16px 18px 0;display:flex;flex-direction:column;gap:4px}
+.pillars li+li{border-inline-start:1px solid var(--line);padding-inline-start:18px}
+.pillars b{font-family:var(--display);font-size:clamp(18px,1.6vw,22px);font-weight:600;color:var(--lapis)}
+html[lang="fa"] .pillars b{font-family:var(--fa)}
+.pillars li>span{color:var(--granite);font-size:14px}
+.sign{margin-top:22px;font-family:var(--display);font-weight:600;font-size:clamp(17px,1.5vw,20px);color:var(--gold)}
+html[lang="fa"] .sign{font-family:var(--fa)}
+@media (max-width:520px){.pillars{grid-template-columns:1fr}.pillars li+li{border-inline-start:0;border-top:1px solid var(--line);padding-inline-start:0}}
+.reg{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:12px 40px;margin-top:40px;padding-top:28px;border-top:1px solid var(--line)}
+.reg dt{font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:var(--granite);font-family:var(--display);font-stretch:110%}
+html[lang="fa"] .reg dt{font-family:var(--fa);letter-spacing:0;font-size:13px}
+.reg dd{margin:4px 0 0;font-weight:600;font-variant-numeric:tabular-nums}
+@media (max-width:900px){.about-grid{grid-template-columns:1fr}.about-media .main{aspect-ratio:16/11}}
+@media (max-width:520px){.reg{grid-template-columns:1fr 1fr}}
+
+/* Services */
+.services{background:var(--stone)}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:clamp(44px,6vw,80px)}
+.sec-head h2{margin-top:20px}
+@media (max-width:860px){.sec-head{grid-template-columns:1fr}}
+.svc-list{border-top:1px solid var(--ink)}
+.svc{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.4fr) 220px;gap:32px;align-items:center;padding-block:34px;border-bottom:1px solid var(--line)}
+.svc h3{font-size:clamp(24px,2.4vw,34px);font-stretch:90%;line-height:1.1}
+html[lang="fa"] .svc h3{font-size:clamp(22px,2vw,28px);font-weight:600}
+.svc p{color:var(--granite)}
+.svc .tags{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:12px;font-size:13px;color:var(--ink)}
+.svc .tags span::before{content:"— ";color:var(--lapis)}
+.svc img{width:220px;aspect-ratio:4/3;object-fit:cover;filter:grayscale(1) contrast(1.05);transition:filter .4s}
+.svc:hover img{filter:none}
+@media (max-width:900px){.svc{grid-template-columns:1fr;gap:14px}.svc img{width:100%;aspect-ratio:16/9;order:-1;filter:none}}
+
+/* Process (a real sequence) */
+.process{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:clamp(56px,7vw,96px);border-top:1px solid var(--line)}
+.step{padding:26px 22px 0 0}
+html[dir="rtl"] .step{padding:26px 0 0 22px}
+.step .n{font-family:var(--display);font-stretch:110%;font-size:12px;letter-spacing:.2em;color:var(--lapis);font-weight:700}
+.step h4{margin:12px 0 8px;font-family:var(--display);font-weight:600;font-size:18px;font-stretch:96%}
+html[lang="fa"] .step h4{font-family:var(--fa)}
+.step p{font-size:14px;color:var(--granite)}
+@media (max-width:900px){.process{grid-template-columns:1fr 1fr;gap:8px 20px}}
+@media (max-width:480px){.process{grid-template-columns:1fr}}
+
+
+/* Residences band */
+.living{background:var(--ink);color:#fff;padding-block:clamp(16px,2vw,28px)}
+.living-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:clamp(150px,17vw,250px);gap:clamp(10px,1.4vw,20px);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.lv{margin:0;overflow:hidden;min-width:0}
+.lv img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.lv:hover img{transform:scale(1.03)}
+.lv.a{grid-column:1/8;grid-row:1/4}
+.lv-txt{grid-column:8/13;grid-row:1/3;display:flex;flex-direction:column;justify-content:center;gap:22px;padding:clamp(8px,2vw,32px)}
+.lv-txt .eyebrow{color:var(--sand)}
+.lv-txt .lead{color:var(--mist)}
+.lv-txt .btn{align-self:flex-start}
+.lv.b{grid-column:8/13;grid-row:3/5}
+.lv.c{grid-column:1/4;grid-row:4/6}
+.lv.d{grid-column:4/8;grid-row:4/6}
+.lv.b{grid-row:3/6}
+@media (max-width:860px){.living-grid{grid-template-columns:1fr 1fr;grid-auto-rows:auto}.lv{aspect-ratio:4/3}.lv.a{grid-column:1/-1;grid-row:auto;aspect-ratio:16/10}.lv-txt{grid-column:1/-1;grid-row:auto;padding:28px 0}.lv.b,.lv.c,.lv.d{grid-column:auto;grid-row:auto}.lv.b{grid-column:1/-1;aspect-ratio:16/10}}
+
+/* Projects */
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:600 12px/1 var(--display);font-stretch:110%;letter-spacing:.12em;text-transform:uppercase;padding:11px 16px;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;transition:all .2s}
+html[lang="fa"] .chip{font-family:var(--fa);letter-spacing:0;font-size:14px}
+.chip[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.proj-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(16px,2vw,28px);margin-top:36px}
+.proj{grid-column:span 4;position:relative;text-decoration:none;color:inherit;display:flex;flex-direction:column;min-width:0}
+.proj.wide{grid-column:span 8}
+.proj .ph{overflow:hidden;background:var(--stone);aspect-ratio:4/3}
+.proj.wide .ph{aspect-ratio:auto;height:100%;min-height:0}
+.proj .ph img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.proj:hover .ph img{transform:scale(1.04)}
+.proj .meta{display:flex;justify-content:space-between;gap:16px;padding-top:16px;align-items:baseline}
+.proj h3{font-size:19px;font-stretch:96%;font-weight:600;line-height:1.25}
+html[lang="fa"] .proj h3{font-size:17px}
+.proj .sub{font-size:13px;color:var(--granite);margin-top:4px}
+.proj .yr{font-family:var(--display);font-stretch:110%;font-size:13px;color:var(--lapis);font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.proj[hidden]{display:none}
+.proj.wide{display:grid;grid-template-rows:1fr auto}
+@media (max-width:960px){.proj{grid-column:span 6}.proj.wide{grid-column:span 12}.proj.wide .ph{aspect-ratio:16/9;height:auto}}
+@media (max-width:600px){.proj,.proj.wide{grid-column:span 12}}
+
+
+/* Portfolio */
+.tabs{display:flex;gap:0;border-bottom:1px solid var(--line);overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:18px 22px 16px;cursor:pointer;color:var(--granite);font:600 13px/1 var(--display);font-stretch:110%;letter-spacing:.14em;text-transform:uppercase;display:flex;align-items:baseline;gap:10px;transition:color .2s,border-color .2s}
+.tab:first-child{padding-inline-start:0}
+html[lang="fa"] .tab{font-family:var(--fa);letter-spacing:0;font-size:15px}
+.tab sup{font-size:10px;color:var(--lapis);letter-spacing:0;font-variant-numeric:tabular-nums}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--ink)}
+.tab:hover{color:var(--ink)}
+.cat-intro{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:end;padding:34px 0 30px}
+.cat-intro h3{font-size:clamp(26px,2.8vw,40px);font-stretch:86%;font-weight:500}
+html[lang="fa"] .cat-intro h3{font-size:clamp(22px,2.2vw,32px);font-weight:600}
+.cat-intro p{color:var(--granite);max-width:60ch;margin-top:10px}
+.cat-intro .count{font-family:var(--display);font-stretch:80%;font-size:clamp(40px,4vw,64px);line-height:1;color:var(--line);font-variant-numeric:tabular-nums}
+.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:clamp(150px,15vw,230px);grid-auto-flow:dense;gap:clamp(10px,1.2vw,18px)}
+.tile{position:relative;overflow:hidden;background:var(--stone);cursor:zoom-in;border:0;padding:0;text-align:start;color:#fff;display:block;min-width:0}
+.tile.t{grid-row:span 2}
+.tile.w{grid-column:span 2}
+.tile.b{grid-column:span 2;grid-row:span 2}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.tile::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,31,25,0) 55%,rgba(10,31,25,.78));opacity:.85;transition:opacity .4s}
+.tile:hover img{transform:scale(1.045)}
+.tile .cap{position:absolute;inset-inline:18px;bottom:16px;z-index:1;display:flex;flex-direction:column;gap:4px}
+.tile .cap b{font-family:var(--display);font-stretch:94%;font-weight:600;font-size:clamp(15px,1.2vw,18px);line-height:1.25}
+html[lang="fa"] .tile .cap b{font-family:var(--fa);font-size:15px}
+.tile .cap small{font-size:12px;color:rgba(255,255,255,.75);letter-spacing:.04em}
+.tile .own{position:absolute;top:14px;inset-inline-start:14px;z-index:1;font:600 10px/1 var(--display);letter-spacing:.18em;text-transform:uppercase;background:rgba(10,31,25,.55);backdrop-filter:blur(6px);padding:7px 9px;color:var(--sand)}
+html[lang="fa"] .tile .own{font-family:var(--fa);letter-spacing:0;font-size:11px}
+@media (max-width:900px){.gallery{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:clamp(150px,34vw,260px)}.cat-intro{grid-template-columns:1fr}.cat-intro .count{display:none}}
+@media (max-width:520px){.tile.b,.tile.w{grid-column:span 2}.tile .own{display:none}.tile .cap{inset-inline:12px;bottom:12px}}
+.lb{position:fixed;inset:0;z-index:90;background:rgba(10,12,14,.94);display:grid;grid-template-rows:1fr auto;padding:calc(56px + env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) calc(20px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lb img{max-width:100%;max-height:100%;margin:auto;object-fit:contain;min-height:0}
+.lb .lb-cap{color:#fff;text-align:center;padding-top:16px;font-size:15px}
+.lb .lb-cap small{display:block;color:var(--mist);font-size:12px;margin-top:4px}
+.lb button{position:absolute;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:#fff;width:46px;height:46px;cursor:pointer;font-size:20px;display:grid;place-items:center}
+.lb .x{top:calc(12px + env(safe-area-inset-top,0px));inset-inline-end:max(16px,env(safe-area-inset-right,0px))}
+.lb .pv{left:max(16px,env(safe-area-inset-left,0px));top:50%}
+.lb .nx{right:max(16px,env(safe-area-inset-right,0px));top:50%}
+
+/* Record */
+.record{margin-top:clamp(56px,7vw,90px);border-top:1px solid var(--ink)}
+.record summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:26px 0;font-family:var(--display);font-stretch:96%;font-size:clamp(20px,2vw,26px);font-weight:500}
+html[lang="fa"] .record summary{font-family:var(--fa)}
+.record summary::-webkit-details-marker{display:none}
+.record summary .pm{width:38px;height:38px;border:1px solid var(--ink);display:grid;place-items:center;flex:none;transition:transform .3s}
+.record[open] summary .pm{transform:rotate(45deg)}
+.record summary small{display:block;font-family:var(--body);font-size:14px;color:var(--granite);font-weight:400;margin-top:4px}
+html[lang="fa"] .record summary small{font-family:var(--fa)}
+.tbl-wrap{overflow-x:auto;padding-bottom:20px}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:620px}
+th{text-align:start;font:600 11px/1 var(--display);font-stretch:110%;letter-spacing:.16em;text-transform:uppercase;color:var(--granite);padding:12px 12px 12px 0;border-bottom:1px solid var(--line)}
+html[lang="fa"] th{font-family:var(--fa);letter-spacing:0;font-size:13px}
+td{padding:13px 12px 13px 0;border-bottom:1px solid var(--line);vertical-align:top}
+html[dir="rtl"] th,html[dir="rtl"] td{padding:12px 0 12px 12px}
+td.y{font-variant-numeric:tabular-nums;color:var(--lapis);font-weight:600;white-space:nowrap;width:70px}
+td.c{color:var(--granite);width:38%}
+
+/* Clients band */
+.clients{background:var(--ink);color:#fff}
+.clients .eyebrow{color:var(--sand)}
+.client-list{display:grid;grid-template-columns:repeat(4,1fr);margin-top:44px;border-top:1px solid rgba(255,255,255,.14)}
+.client-list li{list-style:none;padding:26px 20px 26px 0;border-bottom:1px solid rgba(255,255,255,.14);font-family:var(--display);font-stretch:96%;font-size:clamp(17px,1.5vw,21px);line-height:1.3}
+html[lang="fa"] .client-list li{font-family:var(--fa);font-size:17px}
+.client-list li small{display:block;margin-top:6px;font-family:var(--body);font-size:13px;color:var(--mist)}
+html[lang="fa"] .client-list li small{font-family:var(--fa)}
+.client-list{padding:0}
+@media (max-width:900px){.client-list{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.client-list{grid-template-columns:1fr}}
+.quote{margin-top:clamp(56px,7vw,90px);display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:start;max-width:980px}
+.quote .mk{font-family:var(--display);font-size:90px;line-height:.7;color:var(--sand)}
+.quote p{font-family:var(--display);font-stretch:88%;font-size:clamp(22px,2.6vw,36px);line-height:1.25;font-weight:400}
+html[lang="fa"] .quote p{font-family:var(--fa);line-height:1.7;font-size:clamp(20px,2.2vw,30px)}
+.quote cite{display:block;margin-top:18px;font-style:normal;color:var(--mist);font-size:14px}
+
+/* Team */
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(18px,2.4vw,34px) clamp(16px,2vw,28px)}
+.member{min-width:0}
+.member .ph{aspect-ratio:3/4;overflow:hidden;background:var(--ink-2);position:relative}
+.member .ph img{width:100%;height:100%;object-fit:cover;object-position:50% 18%;transition:transform .7s}
+.member:hover .ph img{transform:scale(1.03)}
+.member .ph .tbc{position:absolute;inset-inline-start:12px;bottom:12px;font:600 10px/1 var(--display);letter-spacing:.18em;text-transform:uppercase;color:var(--sand);background:rgba(10,31,25,.7);padding:7px 9px}
+html[lang="fa"] .member .ph .tbc{font-family:var(--fa);letter-spacing:0;font-size:12px}
+.member h3{margin-top:16px;font-size:19px;font-stretch:96%;font-weight:600}
+html[lang="fa"] .member h3{font-size:18px}
+.member .role{color:var(--lapis);font-size:14px;font-weight:600;margin-top:4px;line-height:1.4}
+.member.partner-m .ph{background:linear-gradient(160deg,#FBFAF6,#ECE9E1);display:grid;place-items:center}
+.member.partner-m .ph img{width:72%;height:auto;aspect-ratio:1;object-fit:contain;filter:drop-shadow(0 14px 28px rgba(14,38,32,.16))}
+.member.partner-m:hover .ph img{transform:scale(1.02)}
+.member .plink{display:inline-block;margin-top:10px;font:600 13px/1.2 var(--body);color:var(--gold);text-decoration:none;border-bottom:1px solid currentColor;direction:ltr}
+.member .cred{color:var(--granite);font-size:13px;margin-top:6px}
+.member.lead-m{grid-column:span 2;grid-row:span 2;display:grid;grid-template-rows:1fr auto}
+.member.lead-m .ph{aspect-ratio:auto;height:100%;min-height:420px}
+.member.lead-m h3{font-size:clamp(24px,2.4vw,32px)}
+.member.lead-m .bio{color:var(--granite);margin-top:10px;max-width:52ch;font-size:15px}
+@media (max-width:1000px){.team-grid{grid-template-columns:repeat(3,1fr)}.member.lead-m{grid-column:span 3;grid-row:auto}.member.lead-m .ph{aspect-ratio:16/10;min-height:0;height:auto}}
+@media (max-width:640px){.team-grid{grid-template-columns:1fr 1fr}.member.lead-m{grid-column:span 2}.member.lead-m .ph{aspect-ratio:4/5}}
+
+/* Contact */
+.contact{background:var(--stone)}
+.contact-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);gap:clamp(40px,6vw,96px)}
+.office{display:grid;gap:30px;margin-top:40px}
+.office h4{margin:0 0 8px;font:600 11px/1 var(--display);font-stretch:110%;letter-spacing:.18em;text-transform:uppercase;color:var(--granite)}
+html[lang="fa"] .office h4{font-family:var(--fa);letter-spacing:0;font-size:13px}
+.office p,.office li{font-size:16px}
+.office ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.office .num{font-variant-numeric:tabular-nums;direction:ltr;unicode-bidi:isolate}
+.copy{background:none;border:0;color:var(--lapis);font:600 12px var(--body);cursor:pointer;padding:0 6px;text-decoration:underline;text-underline-offset:3px}
+form{background:var(--paper);padding:clamp(24px,4vw,52px);display:grid;grid-template-columns:1fr 1fr;gap:22px 24px;align-content:start}
+form h3{grid-column:1/-1;font-size:clamp(24px,2.4vw,32px);font-stretch:90%}
+html[lang="fa"] form h3{font-size:24px;font-weight:600}
+form .hint{grid-column:1/-1;color:var(--granite);font-size:14px;margin-top:-10px}
+.fld{display:flex;flex-direction:column;gap:8px;min-width:0}
+.fld.full{grid-column:1/-1}
+label{font:600 11px/1.2 var(--display);font-stretch:110%;letter-spacing:.16em;text-transform:uppercase;color:var(--granite)}
+html[lang="fa"] label{font-family:var(--fa);letter-spacing:0;font-size:13px}
+input,select,textarea{font:inherit;font-size:16px;color:var(--ink);background:transparent;border:0;border-bottom:1px solid var(--line);padding:10px 0;border-radius:0;width:100%;transition:border-color .2s}
+select{appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--granite) 50%),linear-gradient(135deg,var(--granite) 50%,transparent 50%);background-position:calc(100% - 10px) 55%,calc(100% - 5px) 55%;background-size:5px 5px;background-repeat:no-repeat}
+html[dir="rtl"] select{background-position:10px 55%,15px 55%}
+textarea{resize:vertical;min-height:110px}
+input:focus,select:focus,textarea:focus{outline:none;border-bottom-color:var(--lapis)}
+.fld.err input,.fld.err select,.fld.err textarea{border-bottom-color:#A3302A}
+.fld .msg{font-size:12px;color:#A3302A;min-height:0}
+.types{display:flex;flex-wrap:wrap;gap:8px}
+.types input{position:absolute;opacity:0;width:1px;height:1px}
+.types label{font:500 14px/1 var(--body);letter-spacing:0;text-transform:none;color:var(--ink);border:1px solid var(--line);padding:11px 14px;cursor:pointer;transition:all .2s}
+html[lang="fa"] .types label{font-family:var(--fa)}
+.types input:checked+label{background:var(--ink);color:#fff;border-color:var(--ink)}
+.types input:focus-visible+label{outline:2px solid var(--lapis-2);outline-offset:2px}
+.form-foot{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;margin-top:6px}
+.form-foot small{color:var(--granite);font-size:13px;max-width:44ch}
+.done{grid-column:1/-1;border-top:1px solid var(--line);padding-top:22px;display:grid;gap:14px}
+.done pre{white-space:pre-wrap;font:14px/1.6 var(--body);background:var(--stone);padding:18px;margin:0;max-height:260px;overflow:auto}
+html[lang="fa"] .done pre{font-family:var(--fa)}
+@media (max-width:900px){.contact-grid{grid-template-columns:1fr}}
+@media (max-width:560px){form{grid-template-columns:1fr}}
+
+/* Footer */
+footer{background:var(--ink);color:var(--mist);padding-block:64px 40px;font-size:14px}
+.ft{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+.ft a{text-decoration:none;color:var(--mist)}
+.ft a:hover{color:#fff}
+.ft ul{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:8px}
+.ft h5{margin:0;font:600 11px/1 var(--display);letter-spacing:.18em;text-transform:uppercase;color:#fff}
+html[lang="fa"] .ft h5{font-family:var(--fa);letter-spacing:0;font-size:13px}
+.ft-bottom{margin-top:56px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px}
+@media (max-width:760px){.ft{grid-template-columns:1fr}}
+.toast{position:fixed;bottom:calc(20px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:12px 18px;font-size:14px;z-index:80}
+@media (max-width:600px){
+ .hero .wrap{min-height:76svh;padding-block:104px 34px}
+ .hero .eyebrow,.hero-foot p,.hero-ctas .btn-light{display:none}
+ .hero h1{font-size:42px;line-height:.98;margin-top:0;max-width:11ch}
+ html[lang="fa"] .hero h1{font-size:36px;line-height:1.35}
+ .hero-loc{font-size:11px;letter-spacing:.16em;margin-top:14px}
+ .hero-foot{margin-top:24px;gap:0}
+ .hero-ctas{width:100%;flex-wrap:nowrap}
+ .hero-ctas .btn-solid{flex:1 1 auto!important;font-size:12px}
+ .hero::after,html[dir="rtl"] .hero::after{background:linear-gradient(180deg,rgba(10,31,25,.45) 0%,rgba(10,31,25,.2) 30%,rgba(10,31,25,.92) 100%)}
+ .brand-sub{display:none}.brand-name{font-size:15px;letter-spacing:.08em}.brand svg{width:34px;height:34px}
+ .lang{padding:8px 10px}
+ .hdr-call{display:none!important}
+ .svc .tags{display:none}
+ .brand{gap:10px}.brand-name{font-size:14px;letter-spacing:.05em}
+ .hero-ctas .btn-solid{letter-spacing:.04em!important;font-size:11.5px!important;padding-inline:14px;white-space:nowrap}
+ .hero .wrap{padding-bottom:88px}
+}
+a.lang{text-decoration:none;display:inline-flex;align-items:center}
+a.lang[lang="fa"]{font-family:var(--fa);letter-spacing:0;font-size:13px}
+</style>
+</head>
+<body>
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="GhalehBabak home">
+      <svg class="logo" width="52" height="36" viewBox="36 160 972 668" aria-hidden="true" style="color:#fff"><g fill="currentColor">
+<path d="M48 416 L530 170 L1002 438 L1002 524 L530 258 L48 503 Z"/>
+<path fill-rule="evenodd" d="M233 504H800V597H233Z M285 532H403V570H285Z M433 532H581V570H433Z M615 532H752V570H615Z"/>
+<path d="M605 590H651V760H605Z"/>
+<path d="M48 636H106V760H48Z M48 752H787V818H48Z"/>
+<path fill-rule="evenodd" d="M373 652H557V760H373Z M417 692H513V760H417Z"/>
+<path d="M703 627H787V705H703Z M741 700H787V760H741Z"/>
+<path d="M829 539H883V818H829Z M829 748H1002V818H829Z M946 620H1002V818H946Z"/>
+</g></svg>
+      <span class="brand-txt"><span class="brand-name" data-t="header-1"><span class="en">GHALEHBABAK</span></span><span class="brand-sub" data-t="header-2"><span class="en">Construction Company</span></span></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#about"><span class="en">About</span></a>
+      <a href="#services"><span class="en">Services</span></a>
+      <a href="#projects"><span class="en">Projects</span></a>
+      <a href="#team"><span class="en">Leadership</span></a>
+      <a href="#contact"><span class="en">Contact</span></a>
+    </nav>
+    <div class="hdr-actions">
+      <a class="lang" id="lang" href="index.html" hreflang="fa" lang="fa">فارسی</a>
+      <a class="icall on-dark hdr-call" href="tel:+989145000568" aria-label="Call for consultation" title="Call for consultation"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A20 20 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg></a>
+      <a class="btn btn-solid" href="#contact" data-req="Free consultation"><span class="en">Free consultation</span></a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18" stroke="currentColor" stroke-width="1.6"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero" aria-label="Introduction" style="padding-block:0">
+  <div class="hero-img"><img src="img/n2d70.webp" alt="Classical stone residence at dusk"></div>
+  <div class="wrap">
+    <div class="eyebrow" data-t="hero-1"><span class="en">Architecture | Engineering | Construction | Development</span></div>
+    <h1 data-t="hero-2"><span class="en">Rooted in Heritage. Building the Future.</span></h1>
+    <p class="hero-loc" data-t="hero-4"><span class="en">Tabriz • Tehran &nbsp;|&nbsp; Since 1983</span></p>
+    <div class="hero-foot">
+      <p data-t="hero-5"><span class="en">Four decades of engineering, from roads and public buildings to luxury residences and commercial landmarks. We design, engineer and build every project ourselves, from foundation to final key.</span></p>
+      <div class="hero-ctas">
+        <a class="btn btn-solid" href="#contact" data-req="Free consultation"><span class="en">Book a free consultation</span> <span class="arr">→</span></a>
+        <a class="icall on-dark" href="tel:+989145000568" aria-label="Call for consultation" title="Call for consultation"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A20 20 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg></a>
+        <a class="btn btn-light" href="#projects"><span class="en">View our work</span></a>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="facts" aria-label="Company facts">
+  <div class="wrap">
+    <div class="fact"><b data-t="facts-1"><span class="en">43</span></b><span data-t="facts-2"><span class="en">years in construction</span></span></div>
+    <div class="fact"><b data-t="facts-3"><span class="en">31</span></b><span data-t="facts-4"><span class="en">public contracts delivered</span></span></div>
+    <div class="fact"><b data-t="facts-5"><span class="en">10+</span></b><span data-t="facts-6"><span class="en">letters of commendation</span></span></div>
+    <div class="fact"><b data-t="facts-7"><span class="en">No. 2560</span></b><span data-t="facts-8"><span class="en">registered company, Tabriz</span></span></div>
+  </div>
+</section>
+
+<section class="offer" id="consult" aria-label="Consultation and site visit">
+  <div class="wrap">
+    <div class="offer-head">
+      <div>
+        <div class="eyebrow" data-t="consult-1"><span class="en">Start here</span></div>
+        <h2 data-t="consult-2"><span class="en">Free consultation. Site visit. Cost estimate.</span></h2>
+      </div>
+      <p class="lead" data-t="consult-3"><span class="en">Tell us about your land or building. Our engineers will advise you at no cost, visit the site and give you a clear estimate before any commitment.</span></p>
+    </div>
+    <div class="offer-grid">
+      <a class="oc hl" href="#contact" data-req="Free consultation"><span class="free" data-t="consult-4"><span class="en">Free</span></span><b data-t="consult-5"><span class="en">Free consultation</span></b><span class="d" data-t="consult-6"><span class="en">Talk to an engineer about your plot, budget and options.</span></span><span class="go"><span class="en">Request</span> <span class="arr">→</span></span></a>
+      <a class="oc" href="#contact" data-req="Site visit"><b data-t="consult-7"><span class="en">Site visit request</span></b><span class="d" data-t="consult-8"><span class="en">We inspect the site, access, soil and existing structure.</span></span><span class="go"><span class="en">Book a visit</span> <span class="arr">→</span></span></a>
+      <a class="oc" href="#contact" data-req="Cost estimate"><b data-t="consult-9"><span class="en">Cost estimate</span></b><span class="d" data-t="consult-10"><span class="en">An itemised estimate for design and construction.</span></span><span class="go"><span class="en">Get an estimate</span> <span class="arr">→</span></span></a>
+      <a class="oc" href="#contact" data-req="Service registration"><b data-t="consult-11"><span class="en">Register a service</span></b><span class="d" data-t="consult-12"><span class="en">Construction, renovation or partnership: register your project.</span></span><span class="go"><span class="en">Register</span> <span class="arr">→</span></span></a>
+    </div>
+    <div class="direct on-dark offer-direct"><a class="btn btn-call" href="tel:+989145000568"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg><span class="en">Call now for consultation</span></a><a class="btn btn-wa" href="https://wa.me/989145000568?text=Hello%20GhalehBabak%2C%20I%20would%20like%20a%20free%20consultation." target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.7-1.2.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"/></svg><span class="en">WhatsApp</span></a></div>
+  </div>
+</section>
+
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="eyebrow" data-t="about-1"><span class="en">Who we are</span></div>
+      <h2 data-t="about-2"><span class="en">A legacy of experience. A vision for the future.</span></h2>
+      <div class="about-copy">
+        <p data-t="about-3"><span class="en">Since 1983, the name GhalehBabak has stood for engineering experience, professional commitment and spaces built to last. Rooted in the historic city of Tabriz and active in Tehran and across Iran, we have spent more than forty years in road construction, public and service projects, architecture, technical and engineering consultancy, and the design and delivery of building and civil works.</span></p>
+        <p data-t="about-4"><span class="en">Our work spans architectural design and the construction of residential, commercial and public buildings; renovation and modernisation; facade design and execution; road building and civil infrastructure. Public clients have trusted us with schools, branches of Bank Melli and Refah Bank, and Red Crescent facilities.</span></p>
+        <p data-t="about-5"><span class="en">For us, architecture is more than the face of a building, and construction is more than raising a structure. Every project is where engineering knowledge, architectural creativity, an understanding of the city and responsibility for our client’s capital and trust meet.</span></p>
+      </div>
+      <ul class="pillars">
+        <li><b data-t="about-6"><span class="en">Quality</span></b><span data-t="about-7"><span class="en">in execution</span></span></li>
+        <li><b data-t="about-8"><span class="en">Precision</span></b><span data-t="about-9"><span class="en">in every detail</span></span></li>
+        <li><b data-t="about-10"><span class="en">Lasting value</span></b><span data-t="about-11"><span class="en">for generations</span></span></li>
+      </ul>
+      <div class="about-copy"><p data-t="about-12"><span class="en">We join the experience of several generations of engineers with today’s needs, new technology and contemporary construction methods, and we invest and partner in residential, hotel and tourism developments.</span></p></div>
+      <p class="sign" data-t="about-13"><span class="en">GhalehBabak. Rooted in heritage. Building the future.</span></p>
+      <dl class="reg">
+        <div><dt data-t="about-14"><span class="en">Founded</span></dt><dd data-t="about-15"><span class="en">Spring 1983</span></dd></div>
+        <div><dt data-t="about-16"><span class="en">Registration</span></dt><dd data-t="about-17"><span class="en">No. 2560</span></dd></div>
+        <div><dt data-t="about-18"><span class="en">Offices</span></dt><dd data-t="about-19"><span class="en">Tabriz • Tehran</span></dd></div>
+      </dl>
+    </div>
+    <figure class="about-media" style="margin:0">
+      <img class="main" src="img/n2153.webp" alt="Contemporary stone residence at dusk" loading="lazy">
+    </figure>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow" data-t="services-1"><span class="en">What we do</span></div>
+        <h2 data-t="services-2"><span class="en">Construction from zero to one hundred.</span></h2>
+      </div>
+      <p class="lead" data-t="services-3"><span class="en">From the first consultation and cost estimate to design, permits, structure, finishes and the handover of keys. One accountable team, one programme, one budget.</span></p>
+    </div>
+    <div class="svc-list">
+      <article class="svc">
+        <h3 data-t="services-4"><span class="en">Turnkey Construction, 0 to 100</span></h3>
+        <div><p data-t="services-5"><span class="en">Complete building construction with our own site teams: excavation, foundations, structure, MEP installations, facade, finishes and handover, delivered on programme.</span></p>
+        <div class="tags"><span class="en">Turnkey</span><span class="en">Structure &amp; MEP</span><span class="en">Facade &amp; finishes</span></div></div>
+        <img src="img/n2152.webp" alt="" loading="lazy">
+      </article>
+      <article class="svc">
+        <h3 data-t="services-6"><span class="en">Consultation &amp; Cost Estimation</span></h3>
+        <div><p data-t="services-7"><span class="en">Free initial consultation, site visits, feasibility and itemised cost estimates, so you know the scope and budget before you commit.</span></p>
+        <div class="tags"><span class="en">Free consultation</span><span class="en">Site visit</span><span class="en">Cost estimate</span></div></div>
+        <img src="img/r2116.webp" alt="" loading="lazy">
+      </article>
+      <article class="svc">
+        <h3 data-t="services-8"><span class="en">Residential Construction</span></h3>
+        <div><p data-t="services-9"><span class="en">Private residences, apartment buildings and planned residential communities, built to institutional standards.</span></p>
+        <div class="tags"><span class="en">Villas</span><span class="en">Apartments</span><span class="en">Residential towns</span></div></div>
+        <img src="img/r2113.webp" alt="" loading="lazy">
+      </article>
+      <article class="svc">
+        <h3 data-t="services-10"><span class="en">Commercial &amp; Institutional</span></h3>
+        <div><p data-t="services-11"><span class="en">Bank branches, offices, schools, hotels and service buildings. A specialism in banks and educational facilities.</span></p>
+        <div class="tags"><span class="en">Banks</span><span class="en">Schools</span><span class="en">Offices &amp; hotels</span></div></div>
+        <img src="img/n2147.webp" alt="" loading="lazy">
+      </article>
+      <article class="svc">
+        <h3 data-t="services-12"><span class="en">Renovation &amp; Seismic Retrofit</span></h3>
+        <div><p data-t="services-13"><span class="en">Upgrading, strengthening and rebuilding existing structures, including seismic retrofit and full demolition-and-rebuild.</span></p>
+        <div class="tags"><span class="en">Seismic strengthening</span><span class="en">Building upgrades</span><span class="en">Rebuilds</span></div></div>
+        <img src="img/u65.webp" alt="" loading="lazy">
+      </article>
+      <article class="svc">
+        <h3 data-t="services-14"><span class="en">Architecture &amp; Design</span></h3>
+        <div><p data-t="services-15"><span class="en">Concept, architectural and technical design from our in-house technical office, led by our architects and engineers.</span></p>
+        <div class="tags"><span class="en">Concept design</span><span class="en">Permit drawings</span><span class="en">Interior planning</span></div></div>
+        <img src="img/n2150.webp" alt="" loading="lazy">
+      </article>
+      <article class="svc">
+        <h3 data-t="services-16"><span class="en">Facade Design &amp; Execution</span></h3>
+        <div><p data-t="services-17"><span class="en">Stone, travertine, glass and composite facades, designed and installed by one team, from the first elevation drawing to the last fixing.</span></p>
+        <div class="tags"><span class="en">Stone &amp; travertine</span><span class="en">Curtain wall</span><span class="en">Facade lighting</span></div></div>
+        <img src="img/n2151.webp" alt="" loading="lazy">
+      </article>
+      <article class="svc">
+        <h3 data-t="services-18"><span class="en">Roads &amp; Civil Infrastructure</span></h3>
+        <div><p data-t="services-19"><span class="en">Roads, flood barriers, site works and public infrastructure: the civil engineering on which GhalehBabak was founded in 1983.</span></p>
+        <div class="tags"><span class="en">Roads</span><span class="en">Flood defences</span><span class="en">Site works</span></div></div>
+        <img src="img/p_7tir.webp" alt="" loading="lazy">
+      </article>
+      <article class="svc">
+        <h3 data-t="services-20"><span class="en">Construction Partnership &amp; Investment</span></h3>
+        <div><p data-t="services-21"><span class="en">Partnership with landowners and investors in residential, commercial and hospitality construction, under clear contractual shares.</span></p>
+        <div class="tags"><span class="en">Landowner partnership</span><span class="en">Joint ventures</span><span class="en">Hospitality</span></div></div>
+        <img src="img/u112.webp" alt="" loading="lazy">
+      </article>
+    </div>
+
+    <div class="process" aria-label="How we work">
+      <div class="step"><div class="n">01</div><h4 data-t="services-22"><span class="en">Free consultation</span></h4><p data-t="services-23"><span class="en">Your brief, budget and options, at no cost.</span></p></div>
+      <div class="step"><div class="n">02</div><h4 data-t="services-24"><span class="en">Site visit &amp; estimate</span></h4><p data-t="services-25"><span class="en">Site inspection and an itemised cost estimate.</span></p></div>
+      <div class="step"><div class="n">03</div><h4 data-t="services-26"><span class="en">Design &amp; permits</span></h4><p data-t="services-27"><span class="en">Architecture, engineering, contract and permits.</span></p></div>
+      <div class="step"><div class="n">04</div><h4 data-t="services-28"><span class="en">Construction</span></h4><p data-t="services-29"><span class="en">Our own site management, with regular client reporting.</span></p></div>
+      <div class="step"><div class="n">05</div><h4 data-t="services-30"><span class="en">Keys in hand</span></h4><p data-t="services-31"><span class="en">Handover, documentation and aftercare.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="living" aria-label="Residences">
+  <div class="living-grid">
+    <figure class="lv a"><img src="img/r2109.webp" alt="Neoclassical mansion by GhalehBabak" loading="lazy"></figure>
+    <div class="lv-txt">
+      <div class="eyebrow" data-t="living-1"><span class="en">Private residences</span></div>
+      <h2 data-t="living-2"><span class="en">Homes designed around the view.</span></h2>
+      <p class="lead" data-t="living-3"><span class="en">Villas, penthouses and family estates, from the first massing study to the last detail of stone, glass and water. Pools, terraces and gardens are planned with the architecture, not added after it.</span></p>
+      <a class="btn btn-light" href="#contact"><span class="en">Plan your residence</span> <span class="arr">→</span></a>
+    </div>
+    <figure class="lv b"><img src="img/u66.webp" alt="Contemporary living room with sculptural lighting" loading="lazy"></figure>
+    <figure class="lv c"><img src="img/n2146.webp" alt="Modern villa with pool" loading="lazy"></figure>
+    <figure class="lv d"><img src="img/n2149.webp" alt="Cantilevered concrete residence over water" loading="lazy"></figure>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow" data-t="projects-1"><span class="en">Portfolio</span></div>
+        <h2 data-t="projects-2"><span class="en">Selected work, by discipline.</span></h2>
+      </div>
+      <p class="lead" data-t="projects-3"><span class="en">From private residences to commercial and public buildings, every project is designed, engineered and delivered by one accountable team.</span></p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="Project categories" id="tabs"></div>
+    <div class="cat-intro" id="catIntro"></div>
+    <div class="gallery" id="gallery"></div>
+
+<details class="record" id="record">
+      <summary><span><span class="en">Complete track record, 1984–2019</span><small data-t="projects-4"><span class="en">31 contracts with public-sector clients in East Azerbaijan</span></small></span><span class="pm" aria-hidden="true">+</span></summary>
+      <div class="tbl-wrap"><table><thead><tr><th><span class="en">Year</span></th><th><span class="en">Client</span></th><th><span class="en">Project</span></th></tr></thead><tbody id="recBody"></tbody></table></div>
+    </details>
+  </div>
+</section>
+
+<section class="clients">
+  <div class="wrap">
+    <div class="eyebrow" data-t="clients-1"><span class="en">Trusted by</span></div>
+    <ul class="client-list">
+      <li><span class="en">Bank Melli Iran</span><small data-t="clients-2"><span class="en">Branch construction</span></small></li>
+      <li><span class="en">Refah Kargaran Bank</span><small data-t="clients-3"><span class="en">Branches &amp; provincial HQ</span></small></li>
+      <li><span class="en">Schools Renovation Organisation</span><small data-t="clients-4"><span class="en">East Azerbaijan · 15 projects</span></small></li>
+      <li><span class="en">Red Crescent Society</span><small data-t="clients-5"><span class="en">Northwest regional relief base</span></small></li>
+      <li><span class="en">Telecommunications Co.</span><small data-t="clients-6"><span class="en">Regional exchange buildings</span></small></li>
+      <li><span class="en">Natural Resources Directorate</span><small data-t="clients-7"><span class="en">Stations &amp; water reservoir</span></small></li>
+      <li><span class="en">Technical &amp; Vocational Training Org.</span><small data-t="clients-8"><span class="en">Hashtrud training centre</span></small></li>
+      <li><span class="en">Provincial Governorate</span><small data-t="clients-9"><span class="en">Flood protection works</span></small></li>
+    </ul>
+    <blockquote class="quote" style="margin-inline:0">
+      <span class="mk" aria-hidden="true">“</span>
+      <div><p data-t="clients-10"><span class="en">We build schools, banks and homes to stand for generations. That is the measure of quality we hold ourselves to.</span></p>
+      <cite data-t="clients-11"><span class="en">The GhalehBabak standard</span></cite></div>
+    </blockquote>
+  </div>
+</section>
+
+<section id="team">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <div class="eyebrow" data-t="team-1"><span class="en">Leadership &amp; team</span></div>
+        <h2 data-t="team-2"><span class="en">The people accountable for your project.</span></h2>
+      </div>
+      <p class="lead" data-t="team-3"><span class="en">Architects, civil and electrical engineers and site managers, many of whom have worked together for decades.</span></p>
+    </div>
+    <div class="team-grid" id="teamGrid"></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="eyebrow" data-t="contact-1"><span class="en">Start a project</span></div>
+      <h2 style="margin-top:20px" data-t="contact-2"><span class="en">Tell us what you want to build.</span></h2>
+      <p class="free-note" data-t="contact-3"><span class="en">The first consultation is free.</span></p>
+      <div class="direct "><a class="btn btn-call" href="tel:+989145000568"><svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg><span class="en">Call now for consultation</span></a><a class="btn btn-wa" href="https://wa.me/989145000568?text=Hello%20GhalehBabak%2C%20I%20would%20like%20a%20free%20consultation." target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.7-1.2.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"/></svg><span class="en">WhatsApp</span></a></div>
+      <p class="lead" style="margin-top:22px" data-t="contact-4"><span class="en">Every enquiry is read by our management team. We correspond in English and Persian.</span></p>
+      <div class="office">
+        <div><h4 data-t="contact-5"><span class="en">Head office</span></h4>
+          <p data-t="contact-6"><span class="en">No. 20, First Floor, Ebrahimzadeh Street, next to Sina Bank, Valiasr Junction, Tabriz, East Azerbaijan, Iran</span></p></div>
+        <div><h4 data-t="contact-7"><span class="en">Consultation &amp; coordination</span></h4>
+          <p class="num big-num" data-c="consult">+98 914 500 0568</p></div>
+        <div><h4 data-t="contact-8"><span class="en">Office telephone</span></h4>
+          <ul data-c="office"><li class="num">+98 41 3329 9807</li><li class="num">+98 41 3329 9806</li><li class="num">+98 41 3331 2369</li></ul></div>
+        <div><h4 data-t="contact-9"><span class="en">Email</span></h4>
+          <ul data-c="emails"><li><span class="num">ghalehbabak@yahoo.com</span> <button class="copy" type="button" data-copy="ghalehbabak@yahoo.com"><span class="en">Copy</span></button></li><li><span class="num">ghalehbabak@chmail.com</span></li></ul></div>
+      </div>
+    </div>
+
+    <form id="inq" novalidate>
+      <h3><span class="en">Request a service</span></h3>
+      <p class="hint"><span class="en">Tick what you need and leave your details. Fields marked * are required.</span></p>
+      <div class="fld full"><label><span class="en">What do you need? *</span></label>
+        <div class="types" id="types">
+          <input type="checkbox" id="s1" name="svc" value="Free consultation"><label for="s1"><span class="en">Free consultation</span></label>
+          <input type="checkbox" id="s2" name="svc" value="Price quote / cost estimate"><label for="s2"><span class="en">Price quote / cost estimate</span></label>
+          <input type="checkbox" id="s3" name="svc" value="Site visit"><label for="s3"><span class="en">Site visit</span></label>
+          <input type="checkbox" id="s4" name="svc" value="New project"><label for="s4"><span class="en">New project</span></label>
+          <input type="checkbox" id="s5" name="svc" value="Full construction 0–100"><label for="s5"><span class="en">Full construction 0–100</span></label>
+          <input type="checkbox" id="s6" name="svc" value="Structural shell"><label for="s6"><span class="en">Structural shell</span></label>
+          <input type="checkbox" id="s7" name="svc" value="Renovation"><label for="s7"><span class="en">Renovation</span></label>
+          <input type="checkbox" id="s8" name="svc" value="Tiling"><label for="s8"><span class="en">Tiling</span></label>
+          <input type="checkbox" id="s9" name="svc" value="Facade work"><label for="s9"><span class="en">Facade work</span></label>
+          <input type="checkbox" id="s10" name="svc" value="Interior finishing"><label for="s10"><span class="en">Interior finishing</span></label>
+          <input type="checkbox" id="s11" name="svc" value="Architecture & design"><label for="s11"><span class="en">Architecture &amp; design</span></label>
+          <input type="checkbox" id="s12" name="svc" value="Residential"><label for="s12"><span class="en">Residential</span></label>
+          <input type="checkbox" id="s13" name="svc" value="Commercial"><label for="s13"><span class="en">Commercial</span></label>
+          <input type="checkbox" id="s14" name="svc" value="Investment / partnership"><label for="s14"><span class="en">Investment / partnership</span></label>
+        </div><span class="msg" id="typesMsg"></span></div>
+      <div class="fld"><label for="f-name"><span class="en">Full name *</span></label><input id="f-name" name="name" autocomplete="name" required><span class="msg"></span></div>
+      <div class="fld"><label for="f-phone"><span class="en">Phone / WhatsApp *</span></label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required dir="ltr"><span class="msg"></span></div>
+      <div class="fld full"><label for="f-addr"><span class="en">Address / project location *</span></label><input id="f-addr" name="address" autocomplete="street-address" required><span class="msg"></span></div>
+      <div class="fld"><label for="f-size"><span class="en">Land or home area, m² (optional)</span></label><input id="f-size" name="size" inputmode="numeric" dir="ltr"></div>
+      <div class="fld"><label for="f-email"><span class="en">Email (optional)</span></label><input id="f-email" name="email" type="email" autocomplete="email" dir="ltr"><span class="msg"></span></div>
+      <div class="fld full"><label for="f-msg"><span class="en">Your request *</span></label><textarea id="f-msg" name="message" required></textarea><span class="msg"></span></div>
+      <div class="form-foot">
+        <small><span class="en">Your details are used only to respond to this request.</span></small>
+        <button class="btn btn-solid" type="submit"><span class="en">Send request</span> <span class="arr">→</span></button>
+      </div>
+      <div class="done" id="done" hidden>
+        <p><strong><span class="en">Almost done.</span></strong> <span class="en">Tap the button below to send your request to us on WhatsApp.</span></p>
+        <pre id="summary"></pre>
+        <div class="direct"><a class="btn btn-wa" id="sendWa" href="#" target="_blank" rel="noopener"><span class="en">Send on WhatsApp</span></a><button class="btn btn-call" type="button" id="copySum"><span class="en">Copy text</span></button></div>
+      </div>
+    </form>
+  </div>
+</section>
+</main>
+<a class="wa-float" href="https://wa.me/989145000568?text=Hello%20GhalehBabak%2C%20I%20would%20like%20a%20free%20consultation." target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.3-.4.7-1.2.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"/></svg></a>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <div class="brand" style="color:#fff"><svg class="logo" width="52" height="36" viewBox="36 160 972 668" aria-hidden="true" style="color:#fff"><g fill="currentColor">
+<path d="M48 416 L530 170 L1002 438 L1002 524 L530 258 L48 503 Z"/>
+<path fill-rule="evenodd" d="M233 504H800V597H233Z M285 532H403V570H285Z M433 532H581V570H433Z M615 532H752V570H615Z"/>
+<path d="M605 590H651V760H605Z"/>
+<path d="M48 636H106V760H48Z M48 752H787V818H48Z"/>
+<path fill-rule="evenodd" d="M373 652H557V760H373Z M417 692H513V760H417Z"/>
+<path d="M703 627H787V705H703Z M741 700H787V760H741Z"/>
+<path d="M829 539H883V818H829Z M829 748H1002V818H829Z M946 620H1002V818H946Z"/>
+</g></svg>
+        <span class="brand-txt"><span class="brand-name" data-t="footer-1"><span class="en">GHALEHBABAK</span></span><span class="brand-sub" data-t="footer-2"><span class="en">Construction Company</span></span></span></div>
+        <p style="margin-top:20px;max-width:40ch" data-t="footer-3"><span class="en">Architecture, renovation, project execution, residential and commercial construction. Tabriz, since 1983.</span></p>
+      </div>
+      <div><h5 data-t="footer-4"><span class="en">Company</span></h5><ul>
+        <li><a href="#about"><span class="en">About</span></a></li>
+        <li><a href="#services"><span class="en">Services</span></a></li>
+        <li><a href="#projects"><span class="en">Projects</span></a></li>
+        <li><a href="#team"><span class="en">Leadership</span></a></li></ul></div>
+      <div><h5 data-t="footer-5"><span class="en">Contact</span></h5><ul>
+        <li class="num"><strong data-c="consult">+98 914 500 0568</strong></li><li class="num" data-c="office1">+98 41 3329 9807</li><li data-c="email1">ghalehbabak@yahoo.com</li><li><a href="#contact"><span class="en">Project enquiry →</span></a></li></ul></div>
+    </div>
+    <div class="ft-bottom"><span>© 2026 <span class="en">GhalehBabak Road &amp; Building Co. (Private J.S.C.) · Reg. No. 2560</span></span><span data-t="footer-6"><span class="en">Tabriz · Iran</span></span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+const root=document.documentElement;
+let CATS=[{"id": "res", "name_en": "Residential", "name_fa": "مسکونی", "title_en": "Residences of character", "title_fa": "ساختمان‌های مسکونی شاخص", "text_en": "Classical and contemporary apartment buildings, villas and mansions, finished in natural stone, brick and glass.", "text_fa": "آپارتمان‌ها، ویلاها و عمارت‌های کلاسیک و مدرن با نمای سنگ طبیعی، آجر و شیشه.", "items": [{"image": "img/r2110.webp", "size": "big", "title_en": "Classical Villa with Pool", "title_fa": "ویلای کلاسیک با استخر", "subtitle_en": "Residential · Villa", "subtitle_fa": "مسکونی · ویلا", "own_project": true}, {"image": "img/r2112.webp", "size": "tall", "title_en": "Green-Terrace Residence", "title_fa": "ساختمان مسکونی با تراس‌های سبز", "subtitle_en": "Residential · Contemporary", "subtitle_fa": "مسکونی · مدرن", "own_project": true}, {"image": "img/r2115.webp", "size": "tall", "title_en": "Limestone Apartment Building", "title_fa": "آپارتمان با نمای سنگ", "subtitle_en": "Residential · Classical", "subtitle_fa": "مسکونی · کلاسیک", "own_project": true}, {"image": "img/r2113.webp", "size": "tall", "title_en": "Brick Lattice Apartments", "title_fa": "آپارتمان‌های آجری مشبک", "subtitle_en": "Residential · Contemporary", "subtitle_fa": "مسکونی · مدرن", "own_project": true}, {"image": "img/r2111.webp", "size": "tall", "title_en": "Contemporary Stone Residence", "title_fa": "ساختمان مسکونی مدرن سنگی", "subtitle_en": "Residential · Contemporary", "subtitle_fa": "مسکونی · مدرن", "own_project": true}, {"image": "img/r2114.webp", "size": "tall", "title_en": "Classical Corner Residence", "title_fa": "ساختمان مسکونی کلاسیک نبش", "subtitle_en": "Residential · Classical", "subtitle_fa": "مسکونی · کلاسیک", "own_project": true}, {"image": "img/r2108.webp", "size": "tall", "title_en": "Dark Stone Classical Residence", "title_fa": "ساختمان کلاسیک با نمای سنگ تیره", "subtitle_en": "Residential · Classical", "subtitle_fa": "مسکونی · کلاسیک", "own_project": true}, {"image": "img/r2109.webp", "size": "wide", "title_en": "Neoclassical Mansion", "title_fa": "عمارت نئوکلاسیک", "subtitle_en": "Residential · Mansion", "subtitle_fa": "مسکونی · عمارت", "own_project": true}, {"image": "img/r2116.webp", "size": "wide", "title_en": "Classical Facade in Travertine", "title_fa": "نمای کلاسیک تراورتن", "subtitle_en": "Residential · Facade", "subtitle_fa": "مسکونی · نما", "own_project": true}, {"image": "img/n2d70.webp", "size": "wide", "title_en": "Classical Stone Residence", "title_fa": "عمارت مسکونی کلاسیک سنگی", "subtitle_en": "Residential · Classical", "subtitle_fa": "مسکونی · کلاسیک", "own_project": false}, {"image": "img/n2153.webp", "size": "wide", "title_en": "Contemporary Stone Apartments", "title_fa": "آپارتمان مدرن با نمای سنگ", "subtitle_en": "Residential · Contemporary", "subtitle_fa": "مسکونی · مدرن", "own_project": false}]}, {"id": "com", "name_en": "Commercial", "name_fa": "تجاری", "title_en": "Commercial and hospitality", "title_fa": "تجاری، اداری و هتل", "text_en": "Offices, corporate headquarters, hotels and retail space, built to the standard our banking clients have relied on for decades.", "text_fa": "ساختمان‌های اداری، دفاتر مرکزی شرکت‌ها، هتل و فضاهای تجاری؛ با همان استانداردی که کارفرمایان بانکی سال‌ها به آن اعتماد کرده‌اند.", "items": [{"image": "img/n2147.webp", "size": "big", "title_en": "Corporate Headquarters", "title_fa": "ساختمان دفتر مرکزی", "subtitle_en": "Commercial · Offices", "subtitle_fa": "تجاری · اداری", "own_project": false}, {"image": "img/c14.webp", "size": "tall", "title_en": "Office Tower", "title_fa": "برج اداری", "subtitle_en": "Commercial · High-rise", "subtitle_fa": "تجاری · بلندمرتبه", "own_project": false}, {"image": "img/c38.webp", "size": "tall", "title_en": "Hotel Lobby", "title_fa": "لابی هتل", "subtitle_en": "Hospitality · Interiors", "subtitle_fa": "هتل · داخلی", "own_project": false}, {"image": "img/n2152.webp", "size": "wide", "title_en": "Sandstone Office Building", "title_fa": "ساختمان اداری با نمای سنگ", "subtitle_en": "Commercial · Offices", "subtitle_fa": "تجاری · اداری", "own_project": false}, {"image": "img/c46.webp", "size": "wide", "title_en": "Corporate Reception", "title_fa": "لابی و پذیرش اداری", "subtitle_en": "Commercial · Interiors", "subtitle_fa": "تجاری · داخلی", "own_project": false}]}, {"id": "ren", "name_en": "Renovation", "name_fa": "بازسازی", "title_en": "Renovation and retrofit", "title_fa": "بازسازی و مقاوم‌سازی", "text_en": "Full refurbishment, interior renewal and seismic strengthening of existing buildings, completed with occupants in mind.", "text_fa": "بازسازی کامل، نوسازی فضای داخلی و مقاوم‌سازی لرزه‌ای ساختمان‌های موجود.", "items": [{"image": "img/u65.webp", "size": "big", "title_en": "Residence Interior Renewal", "title_fa": "بازسازی داخلی منزل", "subtitle_en": "Renovation · Interiors", "subtitle_fa": "بازسازی · داخلی", "own_project": false}, {"image": "img/p_refah_tabriz.webp", "size": "tall", "title_en": "Refah Bank Central Branch & Provincial HQ", "title_fa": "بهسازی شعبه مرکزی بانک رفاه", "subtitle_en": "Renovation · Tabriz · 2008", "subtitle_fa": "بهسازی · تبریز · ۱۳۸۷", "own_project": true}, {"image": "img/u66.webp", "size": "tall", "title_en": "Living Room Refurbishment", "title_fa": "بازسازی سالن پذیرایی", "subtitle_en": "Renovation · Interiors", "subtitle_fa": "بازسازی · داخلی", "own_project": false}, {"image": "img/p_ahar.webp", "size": "wide", "title_en": "Khalij-e Fars School Rebuild", "title_fa": "تخریب و بازسازی مدرسه خلیج فارس", "subtitle_en": "Rebuild · Ahar · 2007", "subtitle_fa": "تخریب و بازسازی · اهر · ۱۳۸۶", "own_project": true}, {"image": "img/u59.webp", "size": "wide", "title_en": "Apartment Modernisation", "title_fa": "نوسازی آپارتمان", "subtitle_en": "Renovation · Interiors", "subtitle_fa": "بازسازی · داخلی", "own_project": false}]}, {"id": "arc", "name_en": "Architecture & Design", "name_fa": "معماری و طراحی", "title_en": "Architecture and design", "title_fa": "معماری و طراحی", "text_en": "Concept and detailed design from our technical office: massing, facades, interiors and landscape conceived as one.", "text_fa": "طراحی مفهومی و تفصیلی در دفتر فنی: حجم، نما، فضای داخلی و محوطه به‌صورت یکپارچه.", "items": [{"image": "img/n2146.webp", "size": "big", "title_en": "Glass Villa with Pool", "title_fa": "ویلای شیشه‌ای با استخر", "subtitle_en": "Design · Residential", "subtitle_fa": "طراحی · مسکونی", "own_project": false}, {"image": "img/n2151.webp", "size": "tall", "title_en": "Grand Entrance Facade", "title_fa": "طراحی نما و ورودی", "subtitle_en": "Design · Facade", "subtitle_fa": "طراحی · نما", "own_project": false}, {"image": "img/u34.webp", "size": "tall", "title_en": "Terraced Villa with Pools", "title_fa": "ویلای پلکانی با استخر", "subtitle_en": "Design · Residential", "subtitle_fa": "طراحی · مسکونی", "own_project": false}, {"image": "img/n2150.webp", "size": "wide", "title_en": "Concrete & Glass Residence", "title_fa": "ویلای بتن و شیشه", "subtitle_en": "Design · Residential", "subtitle_fa": "طراحی · مسکونی", "own_project": false}, {"image": "img/n2149.webp", "size": "wide", "title_en": "Cantilevered House over Water", "title_fa": "خانه معلق روی آب", "subtitle_en": "Design · Residential", "subtitle_fa": "طراحی · مسکونی", "own_project": false}]}, {"id": "pub", "name_en": "Public & Services", "name_fa": "خدماتی", "title_en": "Public and service buildings", "title_fa": "ساختمان‌های خدماتی و عمومی", "text_en": "Thirty years of schools, bank branches and relief facilities for public clients across East Azerbaijan.", "text_fa": "سی سال ساخت مدرسه، شعب بانک و پایگاه‌های امدادی برای کارفرمایان دولتی در آذربایجان شرقی.", "items": [{"image": "img/p_kaljah.webp", "size": "wide", "title_en": "Kaljah 6-Classroom School", "title_fa": "مدرسه ۶ کلاسه کلجاه", "subtitle_en": "Education · Osku · 2019", "subtitle_fa": "آموزشی · اسکو · ۱۳۹۷", "own_project": true}, {"image": "img/p_nazarloo.webp", "size": "wide", "title_en": "Bank Melli Iran, Nazarlu Branch", "title_fa": "بانک ملی شعبه نظرلو", "subtitle_en": "Banking · Shabestar · 2001", "subtitle_fa": "بانک · شبستر · ۱۳۷۹", "own_project": true}, {"image": "img/p_refah_azarshahr.webp", "size": "tall", "title_en": "Refah Bank, Azarshahr Branch", "title_fa": "بانک رفاه شعبه آذرشهر", "subtitle_en": "Banking · Azarshahr · 2007", "subtitle_fa": "بانک · آذرشهر · ۱۳۸۶", "own_project": true}, {"image": "img/p_azarshahr12.webp", "size": "tall", "title_en": "Maskan Mehr 12-Classroom School", "title_fa": "مدرسه ۱۲ کلاسه مسکن مهر", "subtitle_en": "Education · Azarshahr · 2010", "subtitle_fa": "آموزشی · آذرشهر · ۱۳۸۹", "own_project": true}, {"image": "img/p_7tir.webp", "size": "big", "title_en": "7 Tir 10-Classroom School", "title_fa": "مدرسه ۱۰ کلاسه هفت تیر", "subtitle_en": "Education · Mehraban · 2006", "subtitle_fa": "آموزشی · مهربان · ۱۳۸۵", "own_project": true}]}];
+const REC=[
+['1984','۱۳۶۳','Provincial Governorate Technical Office','دفتر فنی استانداری','Bilehsavar River flood barrier','اجرای سیل‌بند رود بیله‌سوار'],
+['1984','۱۳۶۳','East Azerbaijan Forestry Directorate','سرجنگلداری کل آذربایجان شرقی','Shamdaran station building, completion','تکمیل ساختمان ایستگاه شامداران'],
+['1985','۱۳۶۴','Provincial Governorate Technical Office','دفتر فنی استانداری','Bilehsavar River flood barrier, completion','تکمیل سیل‌بند رود بیله‌سوار'],
+['1986','۱۳۶۵','East Azerbaijan Telecommunications','اداره کل مخابرات آذربایجان شرقی','Niaz village telecom office, building & MEP','کارهای ساختمانی و تأسیساتی دفتر مخابراتی روستای نیاز'],
+['1986','۱۳۶۵','East Azerbaijan Telecommunications','اداره کل مخابرات آذربایجان شرقی','Anbaran village telecom office, building & MEP','کارهای ساختمانی و تأسیساتی دفتر مخابراتی روستای عنبران'],
+['1988','۱۳۶۷','East Azerbaijan Natural Resources','اداره کل منابع طبیعی آذربایجان شرقی','Shamdaran station enclosure & facilities','اجرای حصار و تأسیسات ایستگاه شامداران'],
+['1989','۱۳۶۸','East Azerbaijan Telecommunications','اداره کل مخابرات آذربایجان شرقی','Heris telecom office, building & MEP','کارهای ساختمانی و تأسیساتی دفتر مخابراتی هریس'],
+['1989','۱۳۶۸','East Azerbaijan Telecommunications','اداره کل مخابرات آذربایجان شرقی','Sardaha building works & perimeter fencing','کارهای ساختمانی و حصارکشی سردها'],
+['1992','۱۳۷۱','Schools Renovation Organisation','اداره کل نوسازی مدارس','Duzehkonan 15-classroom school','احداث مدرسه ۱۵ کلاسه دوزه‌کنان'],
+['1993','۱۳۷۲','Schools Renovation Organisation','اداره کل نوسازی مدارس','Duzehkonan 15-classroom school, phase two','ادامه احداث مدرسه ۱۵ کلاسه دوزه‌کنان'],
+['1994','۱۳۷۲','Schools Renovation Organisation','اداره کل نوسازی مدارس','Duzehkonan school heating installation','تأسیسات حرارتی مدرسه ۱۵ کلاسه دوزه‌کنان'],
+['1994','۱۳۷۳','East Azerbaijan Telecommunications','اداره کل مخابرات آذربایجان شرقی','Perimeter walls, Ahar & Varzaqan telecom sites','دیوارکشی زمین مخابرات اهر و ورزقان'],
+['1996','۱۳۷۴','East Azerbaijan Natural Resources','اداره کل منابع طبیعی آذربایجان شرقی','Oun-ibn-Ali water storage reservoir','احداث استخر ذخیره آب عون‌بن‌علی'],
+['2001','۱۳۷۹','Bank Melli Iran','بانک ملی ایران','Nazarlu branch and manager’s residence','احداث ساختمان شعبه و منزل رئیس بانک ملی شعبه نظرلو'],
+['2002','۱۳۸۱','Bank Melli Iran','بانک ملی ایران','Mehraban branch','احداث بانک ملی شعبه مهربان'],
+['2003','۱۳۸۲','Technical & Vocational Training Org.','اداره کل آموزش فنی و حرفه‌ای','Hashtrud training centre, completion','تکمیل مرکز آموزش فنی و حرفه‌ای هشترود'],
+['2004','۱۳۸۳','Refah Kargaran Bank','بانک رفاه کارگران','Marand branch','احداث بانک رفاه شعبه مرند'],
+['2006','۱۳۸۵','Schools Renovation Organisation','اداره کل نوسازی مدارس','7 Tir 10-classroom school, Mehraban','احداث مدرسه ۱۰ کلاسه ۷ تیر مهربان'],
+['2007','۱۳۸۶','Schools Renovation Organisation','اداره کل نوسازی مدارس','Nobonyad 10-classroom school, Sarab','احداث مدرسه ۱۰ کلاسه نوبنیاد سراب'],
+['2007','۱۳۸۶','Schools Renovation Organisation','اداره کل نوسازی مدارس','Navab Safavi 12-classroom school, Ahar','احداث مدرسه ۱۲ کلاسه نواب صفوی اهر'],
+['2007','۱۳۸۶','Refah Kargaran Bank','بانک رفاه کارگران','Azarshahr branch','احداث بانک رفاه شعبه آذرشهر'],
+['2008','۱۳۸۶','Schools Renovation Organisation','اداره کل نوسازی مدارس','Nobonyad multipurpose hall, Mehraban','احداث سالن چندمنظوره نوبنیاد مهربان'],
+['2008','۱۳۸۷','Refah Kargaran Bank','بانک رفاه کارگران','Central branch & provincial HQ renovation, Tabriz','بهسازی ساختمان شعبه مرکزی و اداره امور شعب'],
+['2010','۱۳۸۹','Schools Renovation Organisation','اداره کل نوسازی مدارس','Maskan Mehr 12-classroom school, Azarshahr','احداث مدرسه ۱۲ کلاسه مسکن مهر آذرشهر'],
+['2011','۱۳۹۰','Schools Renovation Organisation','اداره کل نوسازی مدارس','Omid special-needs school, demolition & rebuild, Ajabshir','تخریب و بازسازی مدرسه استثنایی امید عجب‌شیر'],
+['2012','۱۳۹۱','Schools Renovation Organisation','اداره کل نوسازی مدارس','Khatam al-Anbia school seismic retrofit, Bilverdi','مقاوم‌سازی مدرسه خاتم‌الانبیا بیلوردی'],
+['2015','۱۳۹۴','Red Crescent Society, East Azerbaijan','جمعیت هلال احمر آذربایجان شرقی','Northwest regional relief base, MEP completion, Saeedabad','تأسیسات تکمیلی پایگاه امداد شمال‌غرب کشور (سعیدآباد)'],
+['2016','۱۳۹۴','Red Crescent Society, East Azerbaijan','جمعیت هلال احمر آذربایجان شرقی','Site preparation & terracing, Saeedabad base','آماده‌سازی و شیب‌بندی تراس‌های خاکی پایگاه سعیدآباد'],
+['2016','۱۳۹۵','Schools Renovation Organisation','اداره کل نوسازی مدارس','Heating installation, Shahid Sadoughi 12-classroom school, Ahar','تأسیسات گرمایشی مدرسه ۱۲ کلاسه شهید صدوقی اهر'],
+['2017','۱۳۹۶','Schools Renovation Organisation','اداره کل نوسازی مدارس','Dizaj Safarali 3-classroom school, completion, Varzaqan','تکمیل مدرسه ۳ کلاسه دیزج صفرعلی ورزقان'],
+['2019','۱۳۹۷','Schools Renovation Organisation','اداره کل نوسازی مدارس','Kaljah 6-classroom school, completion, Osku','تکمیل مدرسه ۶ کلاسه کلجاه اسکو']
+];
+const PH="data:image/svg+xml,"+encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1D4637"/><stop offset="1" stop-color="#0E2620"/></linearGradient></defs><rect width="300" height="400" fill="url(#g)"/><circle cx="150" cy="150" r="54" fill="#2C5A48"/><path d="M40 400c4-86 52-132 110-132s106 46 110 132z" fill="#2C5A48"/></svg>');
+let TEAM=[{"name_en": "Eng. Alahyar Ansari", "name_fa": "مهندس الهیار انصاری", "role_en": "Founder & Managing Director · Board Member", "role_fa": "بنیان‌گذار و مدیرعامل · عضو هیئت‌مدیره", "detail_en": "B.Sc. Civil Engineering · Executive Management", "detail_fa": "کارشناسی مهندسی عمران · مدیریت ارشد", "bio_en": "Founded GhalehBabak in 1983 and has led the company through four decades of public and private work, from flood barriers in the 1980s to schools and bank branches across East Azerbaijan.", "bio_fa": "بنیان‌گذار قلعه‌بابک در سال ۱۳۶۲ و هدایت‌کننده شرکت در چهار دهه فعالیت؛ از سیل‌بندهای دهه شصت تا مدارس و شعب بانک در سراسر آذربایجان شرقی.", "photo": "img/t_alahyar.webp", "featured": true, "is_logo": false, "link": ""}, {"name_en": "Fatemeh Ansari", "name_fa": "فاطمه انصاری", "role_en": "Executive Director · Construction & Supervision", "role_fa": "مدیر اجرایی و نظارت", "detail_en": "Chair of the Board · B.Arch", "detail_fa": "رئیس هیئت‌مدیره · کارشناسی معماری", "bio_en": "", "bio_fa": "", "photo": "img/t_fateme.webp", "featured": false, "is_logo": false, "link": ""}, {"name_en": "Rahimeh Ansari", "name_fa": "رحیمه انصاری", "role_en": "Vice Chair · Senior Architect", "role_fa": "نایب‌رئیس هیئت‌مدیره · معمار ارشد", "detail_en": "B.Arch · Technical Office", "detail_fa": "کارشناسی معماری · دفتر فنی", "bio_en": "", "bio_fa": "", "photo": "img/t_rahime.webp", "featured": false, "is_logo": false, "link": ""}, {"name_en": "Roghayeh Ansari", "name_fa": "رقیه انصاری", "role_en": "Board Member · Director of Planning & Controls", "role_fa": "عضو هیئت‌مدیره · مدیر برنامه‌ریزی و کنترل پروژه", "detail_en": "M.Sc. Electrical Engineering", "detail_fa": "کارشناسی ارشد مهندسی برق", "bio_en": "", "bio_fa": "", "photo": "img/t_roghaye.webp", "featured": false, "is_logo": false, "link": ""}, {"name_en": "Shahryar Ansari", "name_fa": "شهریار انصاری", "role_en": "Partner · Civil Engineer, Technical Office", "role_fa": "شریک · مهندس عمران دفتر فنی", "detail_en": "B.Sc. Civil Engineering", "detail_fa": "کارشناسی مهندسی عمران", "bio_en": "", "bio_fa": "", "photo": "img/t_shahryar.webp", "featured": false, "is_logo": false, "link": ""}, {"name_en": "Mehdi Khodaei", "name_fa": "مهدی خدایی", "role_en": "Construction Manager · Site Operations", "role_fa": "مدیر اجرا · سرپرست کارگاه", "detail_en": "B.Sc. Civil Engineering", "detail_fa": "کارشناسی مهندسی عمران", "bio_en": "", "bio_fa": "", "photo": "img/t_mehdi.webp", "featured": false, "is_logo": false, "link": ""}, {"name_en": "Yaghoub Esmaeili Lalehbajan", "name_fa": "یعقوب اسماعیلی لاله‌بجان", "role_en": "Head of Finance & Accounts", "role_fa": "مدیر امور مالی و حسابداری", "detail_en": "B.Sc. Accounting", "detail_fa": "کارشناسی حسابداری", "bio_en": "", "bio_fa": "", "photo": "img/t_yaghob.webp", "featured": false, "is_logo": false, "link": ""}, {"name_en": "Fatemeh Ansari", "name_fa": "فاطمه انصاری", "role_en": "Director of Renovation", "role_fa": "مدیر بازسازی", "detail_en": "Renovation, Retrofit & Interior Upgrades", "detail_fa": "بازسازی، مقاوم‌سازی و نوسازی داخلی", "bio_en": "", "bio_fa": "", "photo": "img/t_fateme_ren.webp", "featured": false, "is_logo": false, "link": ""}, {"name_en": "Marina Real Estate", "name_fa": "املاک مارینا", "role_en": "International Client Partner · Türkiye", "role_fa": "شریک بین‌المللی ارتباط با کارفرمایان · ترکیه", "detail_en": "Residential & commercial sales and advisory in Türkiye, Dubai, Thailand and Iran · $100M+ in sales", "detail_fa": "مشاوره و فروش مستقیم پروژه‌های مسکونی و تجاری در ترکیه، دبی، تایلند و ایران · بیش از ۱۰۰ میلیون دلار فروش", "bio_en": "", "bio_fa": "", "photo": "img/marina.webp", "featured": false, "is_logo": true, "link": "https://www.369marinarealestate.com"}];
+let CONTACT={"consult_phone": "+98 914 500 0568", "whatsapp_number": "989145000568", "office_phones": ["+98 41 3329 9807", "+98 41 3329 9806", "+98 41 3331 2369"], "emails": ["ghalehbabak@yahoo.com", "ghalehbabak@chmail.com"]};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const LANG='en';const bi=(e,f)=>esc(LANG==='fa'?f:e);
+document.getElementById('recBody').innerHTML=REC.slice().reverse().map(r=>`<tr><td class="y">${bi(r[0],r[1])}</td><td class="c">${bi(r[2],r[3])}</td><td>${bi(r[4],r[5])}</td></tr>`).join('');
+const img=p=>/^(https?:|data:|\/|img\/)/.test(p)?p:'img/'+p+(/\.\w+$/.test(p)?'':'.webp');
+function renderTeam(){document.getElementById('teamGrid').innerHTML=TEAM.map(m=>`<article class="member${m.featured?' lead-m':''}${m.is_logo?' partner-m':''}"><div class="ph"><img src="${m.photo?img(m.photo):PH}" alt="${esc(m.name_en)}" loading="lazy">${m.photo?'':`<span class="tbc">${bi('Photo coming soon','تصویر به‌زودی')}</span>`}</div><div><h3>${bi(m.name_en,m.name_fa)}</h3><div class="role">${bi(m.role_en,m.role_fa)}</div>${m.detail_en||m.detail_fa?`<div class="cred">${bi(m.detail_en,m.detail_fa)}</div>`:''}${m.bio_en||m.bio_fa?`<p class="bio">${bi(m.bio_en,m.bio_fa)}</p>`:''}${m.link?`<a class="plink" href="${esc(m.link)}" target="_blank" rel="noopener">${esc(m.link.replace(/^https?:\/\/(www\.)?/,'').replace(/\/$/,''))} ↗</a>`:''}</div></article>`).join('');}
+renderTeam();
+
+// portfolio
+const tabs=document.getElementById('tabs'),gal=document.getElementById('gallery'),intro=document.getElementById('catIntro');
+const SZ={big:'b',tall:'t',wide:'w',normal:''};
+function renderTabs(){tabs.innerHTML=CATS.map((c,i)=>`<button class="tab" role="tab" type="button" id="tab-${c.id||i}" aria-selected="${i===0}" data-i="${i}">${bi(c.name_en,c.name_fa)}<sup>${(c.items||[]).length}</sup></button>`).join('');}
+renderTabs();
+let cur=0;
+function show(i){cur=i;const c=CATS[i];tabs.querySelectorAll('.tab').forEach((t,j)=>t.setAttribute('aria-selected',j===i));
+  intro.innerHTML=`<div><h3>${bi(c.title_en,c.title_fa)}</h3><p>${bi(c.text_en,c.text_fa)}</p></div><div class="count">${String(c.items.length).padStart(2,'0')}</div>`;
+  gal.setAttribute('aria-labelledby','tab-'+(c.id||i));c.items=c.items||[];
+  gal.innerHTML=c.items.map((it,k)=>`<button class="tile ${SZ[it.size]??''}" type="button" data-k="${k}"><img src="${img(it.image)}" alt="${esc(it.title_en)}" loading="${k<3?'eager':'lazy'}">${it.own_project?`<span class="own">${bi('GhalehBabak project','پروژه قلعه‌بابک')}</span>`:''}<span class="cap"><b>${bi(it.title_en,it.title_fa)}</b><small>${bi(it.subtitle_en,it.subtitle_fa)}</small></span></button>`).join('');}
+tabs.addEventListener('click',e=>{const t=e.target.closest('.tab');if(t)show(+t.dataset.i)});
+tabs.addEventListener('keydown',e=>{if(e.key!=='ArrowRight'&&e.key!=='ArrowLeft')return;const d=(e.key==='ArrowRight')!==(root.dir==='rtl')?1:-1;const n=(cur+d+CATS.length)%CATS.length;show(n);tabs.children[n].focus()});
+show(0);
+let lb=null,lk=0;
+function openLb(k){lk=k;const it=CATS[cur].items[k];if(!lb){lb=document.createElement('div');lb.className='lb';lb.setAttribute('role','dialog');lb.setAttribute('aria-modal','true');lb.innerHTML='<img alt=""><div class="lb-cap"></div><button class="x" type="button" aria-label="Close">✕</button><button class="pv" type="button" aria-label="Previous">‹</button><button class="nx" type="button" aria-label="Next">›</button>';document.body.appendChild(lb);
+  lb.querySelector('.x').onclick=closeLb;lb.querySelector('.pv').onclick=()=>step(-1);lb.querySelector('.nx').onclick=()=>step(1);lb.addEventListener('click',e=>{if(e.target===lb)closeLb()})}
+  lb.hidden=false;lb.querySelector('img').src=img(it.image);lb.querySelector('img').alt=it.title_en;lb.querySelector('.lb-cap').innerHTML=`${bi(it.title_en,it.title_fa)}<small>${bi(it.subtitle_en,it.subtitle_fa)}</small>`;lb.querySelector('.x').focus()}
+function step(d){const n=CATS[cur].items.length;openLb((lk+d+n)%n)}
+function closeLb(){if(lb){lb.hidden=true;const t=gal.querySelector(`[data-k="${lk}"]`);t&&t.focus()}}
+gal.addEventListener('click',e=>{const t=e.target.closest('.tile');if(t)openLb(+t.dataset.k)});
+document.addEventListener('keydown',e=>{if(!lb||lb.hidden)return;if(e.key==='Escape')closeLb();if(e.key==='ArrowRight')step(1);if(e.key==='ArrowLeft')step(-1)});
+
+// request shortcuts
+document.querySelectorAll('[data-req]').forEach(a=>a.addEventListener('click',()=>{const map={'Free consultation':'Free consultation','Site visit':'Site visit','Cost estimate':'Price quote / cost estimate','Service registration':'New project'};const t=[...document.querySelectorAll('input[name=svc]')].find(i=>i.value===map[a.dataset.req]);if(t)t.checked=true}));
+
+// editable content (content/*.json, edited in Pages CMS)
+function applyTexts(t){(t.sections||[]).forEach(sec=>(sec.items||[]).forEach(it=>{document.querySelectorAll('[data-t="'+it.key+'"]').forEach(el=>{const x=el.querySelector(':scope>.'+LANG);if(x&&it[LANG]!=null)x.textContent=it[LANG]})}))}
+function applyContact(c){CONTACT=Object.assign(CONTACT,c);const tel='tel:+'+CONTACT.consult_phone.replace(/\D/g,'');
+  document.querySelectorAll('a[href^="tel:"]').forEach(a=>a.href=tel);
+  document.querySelectorAll('a[href*="wa.me/"]').forEach(a=>{if(a.id!=='sendWa')a.href=a.href.replace(/wa\.me\/\d+/,'wa.me/'+CONTACT.whatsapp_number)});
+  document.querySelectorAll('[data-c="consult"]').forEach(e=>e.textContent=CONTACT.consult_phone);
+  const o=document.querySelector('[data-c="office"]');if(o)o.innerHTML=(CONTACT.office_phones||[]).map(p=>`<li class="num">${esc(p)}</li>`).join('');
+  const m=document.querySelector('[data-c="emails"]');if(m)m.innerHTML=(CONTACT.emails||[]).map((x,i)=>`<li><span class="num">${esc(x)}</span>${i?'':` <button class="copy" type="button" data-copy="${esc(x)}"><span class="en">Copy</span></button>`}</li>`).join('');
+  const o1=document.querySelector('[data-c="office1"]');if(o1)o1.textContent=(CONTACT.office_phones||[])[0]||'';
+  const e1=document.querySelector('[data-c="email1"]');if(e1)e1.textContent=(CONTACT.emails||[])[0]||'';}
+const J=f=>fetch('content/'+f+'.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null);
+Promise.all([J('texts'),J('team'),J('projects'),J('contact')]).then(([t,tm,p,c])=>{
+  if(t)applyTexts(t);
+  if(tm&&tm.members){TEAM=tm.members;renderTeam()}
+  if(p&&p.categories&&p.categories.length){CATS=p.categories;renderTabs();show(0)}
+  if(c){applyContact(c);document.querySelectorAll('[data-copy]').forEach(b=>{if(!b._c){b._c=1;b.addEventListener('click',()=>copy(b.dataset.copy,b.previousElementSibling))}})}
+});
+
+// language
+document.getElementById('f-addr').placeholder=LANG==='fa'?'شهر، محله، خیابان':'City, district, street';
+
+// mobile menu
+const nav=document.getElementById('nav'),mb=document.getElementById('menuBtn');
+mb.addEventListener('click',()=>{const o=nav.classList.toggle('open');mb.setAttribute('aria-expanded',o)});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');mb.setAttribute('aria-expanded','false')}));
+
+// copy helpers
+function toast(t){const d=document.createElement('div');d.className='toast';d.textContent=t;document.body.appendChild(d);setTimeout(()=>d.remove(),2200)}
+function copy(text,el){const ok=()=>toast(root.lang==='fa'?'کپی شد':'Copied');
+  if(navigator.clipboard){navigator.clipboard.writeText(text).then(ok,()=>sel(el))}else sel(el)}
+function sel(el){if(!el)return;const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r)}
+document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',()=>copy(b.dataset.copy,b.previousElementSibling)));
+
+// form
+const form=document.getElementById('inq');
+form.addEventListener('submit',e=>{e.preventDefault();let ok=true;const fa=root.lang==='fa';
+  const need=[['f-name',v=>v.trim().length>1,fa?'لطفاً نام خود را وارد کنید.':'Please enter your name.'],['f-phone',v=>v.replace(/\D/g,'').length>=7,fa?'شماره تماس معتبر وارد کنید.':'Enter a phone number we can reach you on.'],['f-addr',v=>v.trim().length>2,fa?'آدرس یا محل پروژه را وارد کنید.':'Enter your address or project location.'],['f-msg',v=>v.trim().length>4,fa?'درخواست خود را بنویسید.':'Describe what you need.'],['f-email',v=>!v||/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v),fa?'ایمیل معتبر نیست.':'That email address doesn’t look right.']];
+  need.forEach(([id,test,msg])=>{const i=document.getElementById(id),f=i.closest('.fld');const good=test(i.value);f.classList.toggle('err',!good);const m=f.querySelector('.msg');if(m)m.textContent=good?'':msg;if(!good)ok=false});
+  const boxes=[...form.querySelectorAll('input[name=svc]:checked')];
+  const tm=document.getElementById('typesMsg');tm.textContent=boxes.length?'':(fa?'حداقل یک مورد را تیک بزنید.':'Tick at least one service.');if(!boxes.length)ok=false;
+  if(!ok){const first=form.querySelector('.err input,.err textarea')||document.getElementById('s1');first.focus();return}
+  const lbl=i=>form.querySelector('label[for="'+i.id+'"] .'+(fa?'fa':'en')).textContent;
+  const v=id=>document.getElementById(id).value.trim()||'—';
+  const txt=fa?`درخواست خدمات - قلعه‌بابک\n\nخدمات: ${boxes.map(lbl).join('، ')}\nنام: ${v('f-name')}\nتلفن: ${v('f-phone')}\nآدرس: ${v('f-addr')}\nمتراژ: ${v('f-size')}\nایمیل: ${v('f-email')}\n\n${v('f-msg')}`
+    :`Service request: GhalehBabak Construction\n\nServices: ${boxes.map(lbl).join(', ')}\nName: ${v('f-name')}\nPhone: ${v('f-phone')}\nAddress: ${v('f-addr')}\nArea: ${v('f-size')}${document.getElementById('f-size').value.trim()?' m²':''}\nEmail: ${v('f-email')}\n\n${v('f-msg')}`;
+  document.getElementById('summary').textContent=txt;document.getElementById('sendWa').href='https://wa.me/'+CONTACT.whatsapp_number+'?text='+encodeURIComponent(txt);
+  const d=document.getElementById('done');d.hidden=false;d.scrollIntoView({block:'nearest',behavior:'smooth'});
+});
+document.getElementById('copySum').addEventListener('click',()=>copy(document.getElementById('summary').textContent,document.getElementById('summary')));
+})();
+</script>
+
+</body>
+</html>

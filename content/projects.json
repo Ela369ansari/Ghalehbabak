@@ -1,0 +1,338 @@
+{
+ "categories": [
+  {
+   "id": "res",
+   "name_en": "Residential",
+   "name_fa": "مسکونی",
+   "title_en": "Residences of character",
+   "title_fa": "ساختمان‌های مسکونی شاخص",
+   "text_en": "Classical and contemporary apartment buildings, villas and mansions, finished in natural stone, brick and glass.",
+   "text_fa": "آپارتمان‌ها، ویلاها و عمارت‌های کلاسیک و مدرن با نمای سنگ طبیعی، آجر و شیشه.",
+   "items": [
+    {
+     "image": "img/r2110.webp",
+     "size": "big",
+     "title_en": "Classical Villa with Pool",
+     "title_fa": "ویلای کلاسیک با استخر",
+     "subtitle_en": "Residential · Villa",
+     "subtitle_fa": "مسکونی · ویلا",
+     "own_project": true
+    },
+    {
+     "image": "img/r2112.webp",
+     "size": "tall",
+     "title_en": "Green-Terrace Residence",
+     "title_fa": "ساختمان مسکونی با تراس‌های سبز",
+     "subtitle_en": "Residential · Contemporary",
+     "subtitle_fa": "مسکونی · مدرن",
+     "own_project": true
+    },
+    {
+     "image": "img/r2115.webp",
+     "size": "tall",
+     "title_en": "Limestone Apartment Building",
+     "title_fa": "آپارتمان با نمای سنگ",
+     "subtitle_en": "Residential · Classical",
+     "subtitle_fa": "مسکونی · کلاسیک",
+     "own_project": true
+    },
+    {
+     "image": "img/r2113.webp",
+     "size": "tall",
+     "title_en": "Brick Lattice Apartments",
+     "title_fa": "آپارتمان‌های آجری مشبک",
+     "subtitle_en": "Residential · Contemporary",
+     "subtitle_fa": "مسکونی · مدرن",
+     "own_project": true
+    },
+    {
+     "image": "img/r2111.webp",
+     "size": "tall",
+     "title_en": "Contemporary Stone Residence",
+     "title_fa": "ساختمان مسکونی مدرن سنگی",
+     "subtitle_en": "Residential · Contemporary",
+     "subtitle_fa": "مسکونی · مدرن",
+     "own_project": true
+    },
+    {
+     "image": "img/r2114.webp",
+     "size": "tall",
+     "title_en": "Classical Corner Residence",
+     "title_fa": "ساختمان مسکونی کلاسیک نبش",
+     "subtitle_en": "Residential · Classical",
+     "subtitle_fa": "مسکونی · کلاسیک",
+     "own_project": true
+    },
+    {
+     "image": "img/r2108.webp",
+     "size": "tall",
+     "title_en": "Dark Stone Classical Residence",
+     "title_fa": "ساختمان کلاسیک با نمای سنگ تیره",
+     "subtitle_en": "Residential · Classical",
+     "subtitle_fa": "مسکونی · کلاسیک",
+     "own_project": true
+    },
+    {
+     "image": "img/r2109.webp",
+     "size": "wide",
+     "title_en": "Neoclassical Mansion",
+     "title_fa": "عمارت نئوکلاسیک",
+     "subtitle_en": "Residential · Mansion",
+     "subtitle_fa": "مسکونی · عمارت",
+     "own_project": true
+    },
+    {
+     "image": "img/r2116.webp",
+     "size": "wide",
+     "title_en": "Classical Facade in Travertine",
+     "title_fa": "نمای کلاسیک تراورتن",
+     "subtitle_en": "Residential · Facade",
+     "subtitle_fa": "مسکونی · نما",
+     "own_project": true
+    },
+    {
+     "image": "img/n2d70.webp",
+     "size": "wide",
+     "title_en": "Classical Stone Residence",
+     "title_fa": "عمارت مسکونی کلاسیک سنگی",
+     "subtitle_en": "Residential · Classical",
+     "subtitle_fa": "مسکونی · کلاسیک",
+     "own_project": false
+    },
+    {
+     "image": "img/n2153.webp",
+     "size": "wide",
+     "title_en": "Contemporary Stone Apartments",
+     "title_fa": "آپارتمان مدرن با نمای سنگ",
+     "subtitle_en": "Residential · Contemporary",
+     "subtitle_fa": "مسکونی · مدرن",
+     "own_project": false
+    }
+   ]
+  },
+  {
+   "id": "com",
+   "name_en": "Commercial",
+   "name_fa": "تجاری",
+   "title_en": "Commercial and hospitality",
+   "title_fa": "تجاری، اداری و هتل",
+   "text_en": "Offices, corporate headquarters, hotels and retail space, built to the standard our banking clients have relied on for decades.",
+   "text_fa": "ساختمان‌های اداری، دفاتر مرکزی شرکت‌ها، هتل و فضاهای تجاری؛ با همان استانداردی که کارفرمایان بانکی سال‌ها به آن اعتماد کرده‌اند.",
+   "items": [
+    {
+     "image": "img/n2147.webp",
+     "size": "big",
+     "title_en": "Corporate Headquarters",
+     "title_fa": "ساختمان دفتر مرکزی",
+     "subtitle_en": "Commercial · Offices",
+     "subtitle_fa": "تجاری · اداری",
+     "own_project": false
+    },
+    {
+     "image": "img/c14.webp",
+     "size": "tall",
+     "title_en": "Office Tower",
+     "title_fa": "برج اداری",
+     "subtitle_en": "Commercial · High-rise",
+     "subtitle_fa": "تجاری · بلندمرتبه",
+     "own_project": false
+    },
+    {
+     "image": "img/c38.webp",
+     "size": "tall",
+     "title_en": "Hotel Lobby",
+     "title_fa": "لابی هتل",
+     "subtitle_en": "Hospitality · Interiors",
+     "subtitle_fa": "هتل · داخلی",
+     "own_project": false
+    },
+    {
+     "image": "img/n2152.webp",
+     "size": "wide",
+     "title_en": "Sandstone Office Building",
+     "title_fa": "ساختمان اداری با نمای سنگ",
+     "subtitle_en": "Commercial · Offices",
+     "subtitle_fa": "تجاری · اداری",
+     "own_project": false
+    },
+    {
+     "image": "img/c46.webp",
+     "size": "wide",
+     "title_en": "Corporate Reception",
+     "title_fa": "لابی و پذیرش اداری",
+     "subtitle_en": "Commercial · Interiors",
+     "subtitle_fa": "تجاری · داخلی",
+     "own_project": false
+    }
+   ]
+  },
+  {
+   "id": "ren",
+   "name_en": "Renovation",
+   "name_fa": "بازسازی",
+   "title_en": "Renovation and retrofit",
+   "title_fa": "بازسازی و مقاوم‌سازی",
+   "text_en": "Full refurbishment, interior renewal and seismic strengthening of existing buildings, completed with occupants in mind.",
+   "text_fa": "بازسازی کامل، نوسازی فضای داخلی و مقاوم‌سازی لرزه‌ای ساختمان‌های موجود.",
+   "items": [
+    {
+     "image": "img/u65.webp",
+     "size": "big",
+     "title_en": "Residence Interior Renewal",
+     "title_fa": "بازسازی داخلی منزل",
+     "subtitle_en": "Renovation · Interiors",
+     "subtitle_fa": "بازسازی · داخلی",
+     "own_project": false
+    },
+    {
+     "image": "img/p_refah_tabriz.webp",
+     "size": "tall",
+     "title_en": "Refah Bank Central Branch & Provincial HQ",
+     "title_fa": "بهسازی شعبه مرکزی بانک رفاه",
+     "subtitle_en": "Renovation · Tabriz · 2008",
+     "subtitle_fa": "بهسازی · تبریز · ۱۳۸۷",
+     "own_project": true
+    },
+    {
+     "image": "img/u66.webp",
+     "size": "tall",
+     "title_en": "Living Room Refurbishment",
+     "title_fa": "بازسازی سالن پذیرایی",
+     "subtitle_en": "Renovation · Interiors",
+     "subtitle_fa": "بازسازی · داخلی",
+     "own_project": false
+    },
+    {
+     "image": "img/p_ahar.webp",
+     "size": "wide",
+     "title_en": "Khalij-e Fars School Rebuild",
+     "title_fa": "تخریب و بازسازی مدرسه خلیج فارس",
+     "subtitle_en": "Rebuild · Ahar · 2007",
+     "subtitle_fa": "تخریب و بازسازی · اهر · ۱۳۸۶",
+     "own_project": true
+    },
+    {
+     "image": "img/u59.webp",
+     "size": "wide",
+     "title_en": "Apartment Modernisation",
+     "title_fa": "نوسازی آپارتمان",
+     "subtitle_en": "Renovation · Interiors",
+     "subtitle_fa": "بازسازی · داخلی",
+     "own_project": false
+    }
+   ]
+  },
+  {
+   "id": "arc",
+   "name_en": "Architecture & Design",
+   "name_fa": "معماری و طراحی",
+   "title_en": "Architecture and design",
+   "title_fa": "معماری و طراحی",
+   "text_en": "Concept and detailed design from our technical office: massing, facades, interiors and landscape conceived as one.",
+   "text_fa": "طراحی مفهومی و تفصیلی در دفتر فنی: حجم، نما، فضای داخلی و محوطه به‌صورت یکپارچه.",
+   "items": [
+    {
+     "image": "img/n2146.webp",
+     "size": "big",
+     "title_en": "Glass Villa with Pool",
+     "title_fa": "ویلای شیشه‌ای با استخر",
+     "subtitle_en": "Design · Residential",
+     "subtitle_fa": "طراحی · مسکونی",
+     "own_project": false
+    },
+    {
+     "image": "img/n2151.webp",
+     "size": "tall",
+     "title_en": "Grand Entrance Facade",
+     "title_fa": "طراحی نما و ورودی",
+     "subtitle_en": "Design · Facade",
+     "subtitle_fa": "طراحی · نما",
+     "own_project": false
+    },
+    {
+     "image": "img/u34.webp",
+     "size": "tall",
+     "title_en": "Terraced Villa with Pools",
+     "title_fa": "ویلای پلکانی با استخر",
+     "subtitle_en": "Design · Residential",
+     "subtitle_fa": "طراحی · مسکونی",
+     "own_project": false
+    },
+    {
+     "image": "img/n2150.webp",
+     "size": "wide",
+     "title_en": "Concrete & Glass Residence",
+     "title_fa": "ویلای بتن و شیشه",
+     "subtitle_en": "Design · Residential",
+     "subtitle_fa": "طراحی · مسکونی",
+     "own_project": false
+    },
+    {
+     "image": "img/n2149.webp",
+     "size": "wide",
+     "title_en": "Cantilevered House over Water",
+     "title_fa": "خانه معلق روی آب",
+     "subtitle_en": "Design · Residential",
+     "subtitle_fa": "طراحی · مسکونی",
+     "own_project": false
+    }
+   ]
+  },
+  {
+   "id": "pub",
+   "name_en": "Public & Services",
+   "name_fa": "خدماتی",
+   "title_en": "Public and service buildings",
+   "title_fa": "ساختمان‌های خدماتی و عمومی",
+   "text_en": "Thirty years of schools, bank branches and relief facilities for public clients across East Azerbaijan.",
+   "text_fa": "سی سال ساخت مدرسه، شعب بانک و پایگاه‌های امدادی برای کارفرمایان دولتی در آذربایجان شرقی.",
+   "items": [
+    {
+     "image": "img/p_kaljah.webp",
+     "size": "wide",
+     "title_en": "Kaljah 6-Classroom School",
+     "title_fa": "مدرسه ۶ کلاسه کلجاه",
+     "subtitle_en": "Education · Osku · 2019",
+     "subtitle_fa": "آموزشی · اسکو · ۱۳۹۷",
+     "own_project": true
+    },
+    {
+     "image": "img/p_nazarloo.webp",
+     "size": "wide",
+     "title_en": "Bank Melli Iran, Nazarlu Branch",
+     "title_fa": "بانک ملی شعبه نظرلو",
+     "subtitle_en": "Banking · Shabestar · 2001",
+     "subtitle_fa": "بانک · شبستر · ۱۳۷۹",
+     "own_project": true
+    },
+    {
+     "image": "img/p_refah_azarshahr.webp",
+     "size": "tall",
+     "title_en": "Refah Bank, Azarshahr Branch",
+     "title_fa": "بانک رفاه شعبه آذرشهر",
+     "subtitle_en": "Banking · Azarshahr · 2007",
+     "subtitle_fa": "بانک · آذرشهر · ۱۳۸۶",
+     "own_project": true
+    },
+    {
+     "image": "img/p_azarshahr12.webp",
+     "size": "tall",
+     "title_en": "Maskan Mehr 12-Classroom School",
+     "title_fa": "مدرسه ۱۲ کلاسه مسکن مهر",
+     "subtitle_en": "Education · Azarshahr · 2010",
+     "subtitle_fa": "آموزشی · آذرشهر · ۱۳۸۹",
+     "own_project": true
+    },
+    {
+     "image": "img/p_7tir.webp",
+     "size": "big",
+     "title_en": "7 Tir 10-Classroom School",
+     "title_fa": "مدرسه ۱۰ کلاسه هفت تیر",
+     "subtitle_en": "Education · Mehraban · 2006",
+     "subtitle_fa": "آموزشی · مهربان · ۱۳۸۵",
+     "own_project": true
+    }
+   ]
+  }
+ ]
+}
