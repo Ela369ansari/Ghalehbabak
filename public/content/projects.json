@@ -223,62 +223,6 @@
    ]
   },
   {
-   "id": "arc",
-   "name_en": "Architecture & Design",
-   "name_fa": "معماری و طراحی",
-   "title_en": "Architecture and design",
-   "title_fa": "معماری و طراحی",
-   "text_en": "Concept and detailed design from our technical office: massing, facades, interiors and landscape conceived as one.",
-   "text_fa": "طراحی مفهومی و تفصیلی در دفتر فنی شرکت؛ حجم، نما، فضای داخلی و محوطه، همه در یک طرح یکپارچه.",
-   "items": [
-    {
-     "image": "img/n2146.webp",
-     "size": "big",
-     "title_en": "Glass Villa with Pool",
-     "title_fa": "ویلای شیشه‌ای با استخر",
-     "subtitle_en": "Design · Residential",
-     "subtitle_fa": "طراحی · مسکونی",
-     "own_project": false
-    },
-    {
-     "image": "img/n2151.webp",
-     "size": "tall",
-     "title_en": "Grand Entrance Facade",
-     "title_fa": "طراحی نما و ورودی",
-     "subtitle_en": "Design · Facade",
-     "subtitle_fa": "طراحی · نما",
-     "own_project": false
-    },
-    {
-     "image": "img/u34.webp",
-     "size": "tall",
-     "title_en": "Terraced Villa with Pools",
-     "title_fa": "ویلای پلکانی با استخر",
-     "subtitle_en": "Design · Residential",
-     "subtitle_fa": "طراحی · مسکونی",
-     "own_project": false
-    },
-    {
-     "image": "img/n2150.webp",
-     "size": "wide",
-     "title_en": "Concrete & Glass Residence",
-     "title_fa": "ویلای بتن و شیشه",
-     "subtitle_en": "Design · Residential",
-     "subtitle_fa": "طراحی · مسکونی",
-     "own_project": false
-    },
-    {
-     "image": "img/n2149.webp",
-     "size": "wide",
-     "title_en": "Cantilevered House over Water",
-     "title_fa": "خانه‌ای بر فراز آب",
-     "subtitle_en": "Design · Residential",
-     "subtitle_fa": "طراحی · مسکونی",
-     "own_project": false
-    }
-   ]
-  },
-  {
    "id": "pub",
    "name_en": "Public & Services",
    "name_fa": "خدماتی",
@@ -331,6 +275,62 @@
      "subtitle_en": "Education · Mehraban · 2006",
      "subtitle_fa": "آموزشی · مهربان · ۱۳۸۵",
      "own_project": true
+    }
+   ]
+  },
+  {
+   "id": "arc",
+   "name_en": "Architecture & Design",
+   "name_fa": "معماری و طراحی",
+   "title_en": "Architecture and design",
+   "title_fa": "معماری و طراحی",
+   "text_en": "Concept and detailed design from our technical office: massing, facades, interiors and landscape conceived as one.",
+   "text_fa": "طراحی مفهومی و تفصیلی در دفتر فنی شرکت؛ حجم، نما، فضای داخلی و محوطه، همه در یک طرح یکپارچه.",
+   "items": [
+    {
+     "image": "img/n2146.webp",
+     "size": "big",
+     "title_en": "Glass Villa with Pool",
+     "title_fa": "ویلای شیشه‌ای با استخر",
+     "subtitle_en": "Design · Residential",
+     "subtitle_fa": "طراحی · مسکونی",
+     "own_project": false
+    },
+    {
+     "image": "img/n2151.webp",
+     "size": "tall",
+     "title_en": "Grand Entrance Facade",
+     "title_fa": "طراحی نما و ورودی",
+     "subtitle_en": "Design · Facade",
+     "subtitle_fa": "طراحی · نما",
+     "own_project": false
+    },
+    {
+     "image": "img/u34.webp",
+     "size": "tall",
+     "title_en": "Terraced Villa with Pools",
+     "title_fa": "ویلای پلکانی با استخر",
+     "subtitle_en": "Design · Residential",
+     "subtitle_fa": "طراحی · مسکونی",
+     "own_project": false
+    },
+    {
+     "image": "img/n2150.webp",
+     "size": "wide",
+     "title_en": "Concrete & Glass Residence",
+     "title_fa": "ویلای بتن و شیشه",
+     "subtitle_en": "Design · Residential",
+     "subtitle_fa": "طراحی · مسکونی",
+     "own_project": false
+    },
+    {
+     "image": "img/n2149.webp",
+     "size": "wide",
+     "title_en": "Cantilevered House over Water",
+     "title_fa": "خانه‌ای بر فراز آب",
+     "subtitle_en": "Design · Residential",
+     "subtitle_fa": "طراحی · مسکونی",
+     "own_project": false
     }
    ]
   }

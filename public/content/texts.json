@@ -99,8 +99,8 @@
     },
     {
      "key": "consult-2",
-     "en": "Free consultation. Site visit. Cost estimate.",
-     "fa": "مشاوره رایگان، بازدید از ملک، برآورد هزینه"
+     "en": "Free consultation for partnership, construction and renovation.",
+     "fa": "مشاوره رایگان برای مشارکت در ساخت، ساخت‌وساز و بازسازی"
     },
     {
      "key": "consult-3",
@@ -114,43 +114,53 @@
     },
     {
      "key": "consult-5",
-     "en": "Free consultation",
-     "fa": "مشاوره رایگان"
+     "en": "Construction partnership",
+     "fa": "مشارکت در ساخت"
     },
     {
      "key": "consult-6",
-     "en": "Talk to an engineer about your plot, budget and options.",
-     "fa": "گفت‌وگو با مهندس درباره زمین، بودجه و راهکارهای پیش رو."
+     "en": "Own land or an old building? We build it with you in partnership, under a clear contract.",
+     "fa": "زمین یا ساختمان کلنگی دارید؟ با قراردادی شفاف، با شما مشارکتی می‌سازیم."
     },
     {
      "key": "consult-7",
-     "en": "Site visit request",
-     "fa": "درخواست بازدید از ملک"
+     "en": "Construction consultation",
+     "fa": "مشاوره ساخت‌وساز"
     },
     {
      "key": "consult-8",
-     "en": "We inspect the site, access, soil and existing structure.",
-     "fa": "کارشناسان ما وضعیت ملک، دسترسی‌ها، خاک و سازه موجود را بررسی می‌کنند."
+     "en": "New build from 0 to 100: plans, budget and timeline, discussed with an engineer.",
+     "fa": "ساخت از صفر تا صد؛ نقشه، بودجه و زمان‌بندی را با مهندس در میان بگذارید."
     },
     {
      "key": "consult-9",
-     "en": "Cost estimate",
-     "fa": "برآورد هزینه"
+     "en": "Renovation consultation",
+     "fa": "مشاوره بازسازی"
     },
     {
      "key": "consult-10",
-     "en": "An itemised estimate for design and construction.",
-     "fa": "برآورد جزءبه‌جزء هزینه طراحی و ساخت."
+     "en": "Renovation, retrofit, facade and interior upgrades for your existing building.",
+     "fa": "بازسازی، مقاوم‌سازی، نماسازی و نوسازی فضای داخلی ساختمان موجود."
     },
     {
      "key": "consult-11",
-     "en": "Register a service",
-     "fa": "ثبت درخواست خدمات"
+     "en": "Site visit & estimate",
+     "fa": "بازدید و برآورد هزینه"
     },
     {
      "key": "consult-12",
-     "en": "Construction, renovation or partnership: register your project.",
-     "fa": "ساخت، بازسازی یا مشارکت در ساخت؛ پروژه‌تان را ثبت کنید."
+     "en": "We inspect the property and give you a clear, itemised estimate.",
+     "fa": "از ملک بازدید می‌کنیم و برآوردی شفاف و جزءبه‌جزء ارائه می‌دهیم."
+    },
+    {
+     "key": "consult-13",
+     "en": "Free",
+     "fa": "رایگان"
+    },
+    {
+     "key": "consult-14",
+     "en": "Free",
+     "fa": "رایگان"
     }
    ]
   },
@@ -413,6 +423,16 @@
      "key": "services-31",
      "en": "Handover, documentation and aftercare.",
      "fa": "تحویل ساختمان و مدارک، همراه با خدمات پس از تحویل."
+    },
+    {
+     "key": "services-33",
+     "en": "Our priority",
+     "fa": "اولویت ما"
+    },
+    {
+     "key": "services-32",
+     "en": "Free partnership consultation",
+     "fa": "مشاوره رایگان مشارکت در ساخت"
     }
    ]
   },
